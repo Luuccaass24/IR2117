@@ -12,10 +12,10 @@ int main(){
     int num;
     std::cout<<"Enter a number: ";
     std::cin>>num;
-    if (num>=1){
-        std::cout<<"The sum from 1 to "<<num<<" is "<<Sum(num)<<std::endl;
-    }else{
-        std::cout<<"Seguro que es 0 :D"<<std::endl;
+    while (num<1){
+        std::cout<<"Número incorrecto. Prueba de nuevo..."<<std::endl;
+        std::cout<<"Enter a number: ";
+        std::cin>>num;
     }
-
+    std::cout<<"The sum from 1 to "<<num<<" is "<<Sum(num)<<std::endl;
 }
