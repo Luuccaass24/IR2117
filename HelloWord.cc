@@ -1,5 +1,8 @@
 #include <iostream>
 
 int main(){
-std::cout<<"Hello World"<<std::endl;
+std::cout<<"What is your name?"<<std::endl;
+std::string n;
+std::cin>>n;
+std::cout<<"Hello "<<n<<"!"<<std::endl;
 }
