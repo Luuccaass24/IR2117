@@ -1,12 +1,14 @@
 #include <iostream>
 
 int main(){
-    std::cout<<"Introduce un número >=1: ";
     int a,b,suma;
-    std::cin>>a;
-    std::cout<<"Introduce un número >=1: ";
+    do{
+        std::cout<<"Introduce a >=1: ";
+        std::cin>>a;
+    }while (a<1);
+    std::cout<<"Introduce b >=1: ";
     std::cin>>b;
-    for(int i=a;i<=b;i++){
+    for (int i=a;i<=b;i++){
         suma+=i;
     }
     std::cout<<"La suma es: "<<suma<<std::endl;
