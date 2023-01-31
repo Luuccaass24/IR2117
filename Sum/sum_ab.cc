@@ -6,8 +6,10 @@ int main(){
         std::cout<<"Introduce a >=1: ";
         std::cin>>a;
     }while (a<1);
-    std::cout<<"Introduce b >=1: ";
-    std::cin>>b;
+    do{
+        std::cout<<"Introduce b >=1: ";
+        std::cin>>b;
+    }while (b<1);
     for (int i=a;i<=b;i++){
         suma+=i;
     }
