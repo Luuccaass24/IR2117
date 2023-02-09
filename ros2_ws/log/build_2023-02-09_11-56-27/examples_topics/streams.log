@@ -1,0 +1,26 @@
+[0.026s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics -- -j6 -l6
+[0.099s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.131s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.397s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.445s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.449s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.556s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.607s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.609s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.002s] -- Configuring done
+[1.122s] -- Generating done
+[1.135s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics
+[1.284s] [35m[1mScanning dependencies of target publisher[0m
+[1.289s] [35m[1mScanning dependencies of target subscriber[0m
+[1.499s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/publisher.cpp.o[0m
+[1.499s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/subscriber.cpp.o[0m
+[27.305s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[27.305s] make[2]: *** Se espera a que terminen otras tareas....
+[27.305s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[27.305s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/publisher.dir/all] Error 2
+[27.305s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[27.305s] make[2]: *** Se espera a que terminen otras tareas....
+[27.305s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[27.305s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/subscriber.dir/all] Error 2
+[27.305s] make: *** [Makefile:141: all] Interrupción
+[27.306s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics -- -j6 -l6

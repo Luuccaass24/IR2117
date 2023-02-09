@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/int.hpp"
+#include "std_msgs/msg/int32.hpp"
 #include <iostream>
 
 void topic_callback(const std_msgs::msg::Int32::SharedPtr msg)
