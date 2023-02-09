@@ -1,0 +1,14 @@
+[0.032s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum -- -j6 -l6
+[0.064s] [35m[1mScanning dependencies of target sum[0m
+[0.082s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[1.074s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:[m[K In function ‘[01m[Kvoid topic_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.075s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:11:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msgs[m[K’ has not been declared
+[1.075s]    11 |   std::[01;31m[Kmsgs[m[K::msg::Int32 message;
+[1.075s]       |        [01;31m[K^~~~[m[K
+[1.076s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:12:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[1.076s]    12 |   [01;31m[Kmessage[m[K.data= sum;
+[1.076s]       |   [01;31m[K^~~~~~~[m[K
+[2.298s] make[2]: *** [CMakeFiles/sum.dir/build.make:63: CMakeFiles/sum.dir/sum.cpp.o] Error 1
+[2.299s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sum.dir/all] Error 2
+[2.299s] make: *** [Makefile:141: all] Error 2
+[2.301s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum -- -j6 -l6

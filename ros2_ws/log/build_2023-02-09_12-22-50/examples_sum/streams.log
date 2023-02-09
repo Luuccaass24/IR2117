@@ -1,0 +1,36 @@
+[0.033s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum -- -j6 -l6
+[0.064s] [35m[1mScanning dependencies of target sum[0m
+[0.082s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[1.041s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:[m[K In function ‘[01m[Kvoid topic_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.041s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:11:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msgs[m[K’ has not been declared
+[1.041s]    11 |   std::[01;31m[Kmsgs[m[K::msg::Int32 message;
+[1.041s]       |        [01;31m[K^~~~[m[K
+[1.042s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:12:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[1.042s]    12 |   [01;31m[Kmessage[m[K.data= sum;
+[1.042s]       |   [01;31m[K^~~~~~~[m[K
+[1.052s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.053s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:22:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.053s]    22 |   auto publisher = node -> create_publisher<std::[01;31m[Kmsgs[m[K::msg::Int32>("sum", 10);
+[1.053s]       |                                                  [01;31m[K^~~~[m[K
+[1.053s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:22:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.053s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:22:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.053s]    22 |   auto publisher = node -> [01;31m[Kcreate_publisher<std::msgs::msg::Int32>[m[K("sum", 10);
+[1.053s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.053s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:22:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [4], int)[m[K’
+[1.053s]    22 |   auto publisher = node -> create_publisher<std::msgs::msg::Int32>("sum", 10[01;31m[K)[m[K;
+[1.053s]       |                                                                             [01;31m[K^[m[K
+[1.054s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.054s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.054s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.054s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:1[m[K:
+[1.054s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.054s]   184 |   [01;36m[Kcreate_publisher[m[K(
+[1.054s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.054s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.054s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/ejemplos/sum/sum.cpp:22:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.054s]    22 |   auto publisher = node -> create_publisher<std::msgs::msg::Int32>("sum", 10[01;31m[K)[m[K;
+[1.054s]       |                                                                             [01;31m[K^[m[K
+[2.235s] make[2]: *** [CMakeFiles/sum.dir/build.make:63: CMakeFiles/sum.dir/sum.cpp.o] Error 1
+[2.236s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sum.dir/all] Error 2
+[2.236s] make: *** [Makefile:141: all] Error 2
+[2.238s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_sum -- -j6 -l6
