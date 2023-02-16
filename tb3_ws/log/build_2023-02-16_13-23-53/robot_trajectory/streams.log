@@ -1,0 +1,16 @@
+[0.018s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.062s] [35m[1mScanning dependencies of target square[0m
+[0.087s] [ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[1.197s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:37:21:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[1.197s]    37 |   rclcpp::shutdown()[01;31m[K;[m[K
+[1.197s]       |                     [01;31m[K^[m[K
+[1.197s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:38:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[1.197s]    38 |   [01;31m[Kreturn[m[K 0;
+[1.197s]       |   [01;31m[K^~~~~~[m[K
+[1.197s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:39:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.197s]    39 | [01;31m[K}[m[K
+[1.197s]       | [01;31m[K^[m[K
+[1.968s] make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+[1.969s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
+[1.969s] make: *** [Makefile:141: all] Error 2
+[1.971s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
