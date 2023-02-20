@@ -15,10 +15,14 @@ int main(int argc, char** argv) {
     std::sort(elements);
     if (elements.size()%2==0){
         std::cout<<"even"<<std::endl;
+        m = elements[elements.size()/2];
+        s = elements[elements.size()/2+1];
+        std::cout << "Median: "<<m<<s<<std::endl;
     }else{
         std::cout<<"odd"<<std::endl;
         m = elements[elements.size()/2];
+        std::cout << "Median: "<<m<<std::endl;
     
-    std::cout << "Median: "<<m<<std::endl;
+    
     return 0;
 }
