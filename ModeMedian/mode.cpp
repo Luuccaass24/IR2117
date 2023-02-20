@@ -24,6 +24,6 @@ int main(int argc, char** argv){
         }
         s++;
     }
-    std::cout<<"Mode: "<<m<<std::endl;
+    std::cout<<"Mode: "<<m<<"is listed "<< mayor<< "times"<<std::endl;
     return 0;
 }
