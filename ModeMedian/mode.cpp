@@ -10,6 +10,20 @@ int main(int argc, char** argv){
         n+=1;
         std::cin>>element;
     }
+    mayor = 0
+    while (s<n){
+        contador = 1;
+        for (int i=0;i<n;i++){
+            if (elements[s] == elements[i] && i!=s){
+                contador+=1;
+            }
+        }
+        if (contador > mayor){
+            mayor = contador;
+            m = elements[s];
+        }
+        s++;
+    }
     std::cout<<"Mode: "<<m<<std::endl;
     return 0;
 }
