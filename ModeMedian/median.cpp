@@ -13,6 +13,10 @@ int main(int argc, char** argv) {
         std::cin >> element;
     }
     std::sort(elements);
+    if (elements.size()%2==0){
+        std::cout<<"even"<<std::endl;
+    }else{
+        std::cout<<"odd"<<std::endl;
     
     std::cout << "Median: "<<m<<std::endl;
     return 0;
