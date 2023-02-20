@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
         std::cout<<"even"<<std::endl;
     }else{
         std::cout<<"odd"<<std::endl;
+        m = elements[elements.size()/2];
     
     std::cout << "Median: "<<m<<std::endl;
     return 0;
