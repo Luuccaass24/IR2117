@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target square[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:25:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   25 |         i++
+      |            [01;31m[K^[m[K
+      |            [32m[K;[m[K
+   26 |     [32m[K}[m[K
+      |     [32m[K~[m[K       
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:34:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   34 |         i++
+      |            [01;31m[K^[m[K
+      |            [32m[K;[m[K
+   35 |     [32m[K}[m[K
+      |     [32m[K~[m[K       
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:16:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kspeed[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   16 |   double [01;35m[Kspeed[m[K = node->get_parameter("speed").get_parameter_value().get<double>();
+      |          [01;35m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
