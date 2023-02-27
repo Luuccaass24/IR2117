@@ -11,7 +11,8 @@ int main(int argc, char** argv) {
     int n=0,element;
     std::cin >> element;
     while (not std::cin.eof()) {
-        v << element;
+        v.conservativeResize(n+1);
+        v(n)=element;
         n +=1;
         std::cin >> element;
     }
@@ -20,7 +21,7 @@ int main(int argc, char** argv) {
         std::cout<<"even"<<std::endl;
         m = v[v.size()/2];
         s = v[v.size()/2+1];
-        std::cout << "Median: "<<m<<s<<std::endl;
+        std::cout << "Median: "<<m<<" and "<<s<<std::endl;
     }else{
         std::cout<<"odd"<<std::endl;
         m = v[v.size()/2];
