@@ -1,12 +1,15 @@
 #include <iostream>
-#include <vector>
+#include <algorithm>
+#include <Eigen/Dense>
+
+using  Eigen::VectorXd;
 int main(int argc, char** argv){
     double m=0, s=0;
     int n=0,element;
-    std::vector<int> elements;
+    VectorXd v;
     std::cin>>element;
     while (not std::cin.eof()){
-        elements.push_back(element);
+        v <<element;
         n+=1;
         std::cin>>element;
     }
@@ -14,13 +17,13 @@ int main(int argc, char** argv){
     while (s<n){
         contador = 1;
         for (int i=0;i<n;i++){
-            if (elements[s] == elements[i] && i!=s){
+            if (v[s] == v[i] && i!=s){
                 contador+=1;
             }
         }
         if (contador > mayor){
             mayor = contador;
-            m = elements[s];
+            m = v[s];
         }
         s++;
     }
