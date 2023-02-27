@@ -13,9 +13,9 @@ int main(int argc, char** argv){
         n+=1;
         std::cin>>element;
     }
-    mayor = 0
+    int mayor = 0;
     while (s<n){
-        contador = 1;
+        int contador = 1;
         for (int i=0;i<n;i++){
             if (v[s] == v[i] && i!=s){
                 contador+=1;
