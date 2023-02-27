@@ -6,10 +6,13 @@ using  Eigen::VectorXd;
 int main(int argc, char** argv){
     double m=0, s=0;
     int n=0,element;
-    VectorXd v;
+    int size;
+    std::cout<<"Tamaño de la muestra? ";
+    std::cin>>size;
+    VectorXd v(size);
     std::cin>>element;
     while (not std::cin.eof()){
-        v <<element;
+        v(n)=element;
         n+=1;
         std::cin>>element;
     }
@@ -27,6 +30,6 @@ int main(int argc, char** argv){
         }
         s++;
     }
-    std::cout<<"Mode: "<<m<<"is listed "<< mayor<< "times"<<std::endl;
+    std::cout<<"Mode: "<<m<<" is listed "<< mayor<< " times"<<std::endl;
     return 0;
 }
