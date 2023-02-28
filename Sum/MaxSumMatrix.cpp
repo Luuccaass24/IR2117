@@ -21,6 +21,9 @@ int main() {
             
     std::cout<<"The matrix is: "<<std::endl;
     std::cout<<m<<std::endl;
+    
+    double s = m.row(0).sum();
+    std::cout<<"The sum of row 0 is: "<< s << std::endl;
     return 0;
     
 }
