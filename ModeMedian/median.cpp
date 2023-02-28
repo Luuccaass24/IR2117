@@ -19,8 +19,8 @@ int main(int argc, char** argv) {
     std::sort(v.data(),v.data()+v.size());
     if (v.size()%2==0){
         std::cout<<"even"<<std::endl;
-        m = v[v.size()/2];
-        s = v[v.size()/2+1];
+        m = v[v.size()/2-1];
+        s = v[v.size()/2];
         std::cout << "Median: "<<m<<" and "<<s<<std::endl;
     }else{
         std::cout<<"odd"<<std::endl;
