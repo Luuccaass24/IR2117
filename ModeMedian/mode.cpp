@@ -6,12 +6,10 @@ using  Eigen::VectorXd;
 int main(int argc, char** argv){
     double m=0, s=0;
     int n=0,element;
-    int size;
-    std::cout<<"Tamaño de la muestra? ";
-    std::cin>>size;
-    VectorXd v(size);
+    VectorXd v;
     std::cin>>element;
     while (not std::cin.eof()){
+        v.conservativeResize(n+1);
         v(n)=element;
         n+=1;
         std::cin>>element;
