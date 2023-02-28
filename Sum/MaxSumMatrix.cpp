@@ -21,9 +21,12 @@ int main() {
             
     std::cout<<"The matrix is: "<<std::endl;
     std::cout<<m<<std::endl;
+    VectorXd s(rows);
+    for(int i=0;i<rows;i++){
+        double s(i) = m.row(0).sum();
+        std::cout<<"The sum of row is: "<< s << std::endl;
+    }
     
-    double s = m.row(0).sum();
-    std::cout<<"The sum of row 0 is: "<< s << std::endl;
     return 0;
     
 }
