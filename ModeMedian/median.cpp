@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
         std::cout<<"even"<<std::endl;
         m = v[v.size()/2-1];
         s = v[v.size()/2];
-        std::cout << "Median: "<<m<<" and "<<s<<std::endl;
+        std::cout << "Median: "<<(m + s)/2<<std::endl;
     }else{
         std::cout<<"odd"<<std::endl;
         m = v[v.size()/2];
