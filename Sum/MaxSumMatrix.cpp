@@ -38,6 +38,19 @@ int main() {
     
     double maxRowColSum = MaxSumRow > MaxSumCol ? MaxSumRow : MaxSumCol;
     std::cout<<"The maximum sum of rows or columns is: "<<std::endl;
+    
+    double sumMainDiag = m.diagonal().sum();
+    std::cout<<"The sum of the main diagonal is: "<<sumMainDiag<<std::endl;
+    
+    double sumSecDiag = m.colwise().reverse().diagonal().sum();
+    std::cout<<"The sum of the secondary diagonal is: "<<sumSecDiag<<std::endl;
+    
+    double sumMaxDiag = sumMainDiag > sumSecDiag ? sumMainDiag : sumSecDiag;
+    std::cout<<"The max sum of diagonals is: "<<sumMaxDiag<<std::endl;
+    
+    
+    double maxSum = maxRowColSum > sumMaxDiag ? maxRowColSum : sumMainDiag;
+    std::cout<<"The max sum is: "<<maxSum<<std::endl;
     return 0;
     
 }
