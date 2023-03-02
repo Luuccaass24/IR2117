@@ -7,11 +7,15 @@
 using namespace std::chrono_literals;
 double x;
 double y;
+double angle;
 
 void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     x = msg->pose.pose.position.x;
     y = msg->pose.pose.position.y;
+    angle = msg->pose.pose.orientation.w;
     std::cout << "Pos X: " << x << std::endl;
+    std::cout << "Pos Y: " << y << std::endl;
+    std::cout << "Orientation: " << angle << std::endl;
 }
   
 int main(int argc, char * argv[]){
