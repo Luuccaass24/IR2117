@@ -57,33 +57,33 @@ include CMakeFiles/square.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/square.dir/flags.make
 
-CMakeFiles/square.dir/src/square.cpp.o: CMakeFiles/square.dir/flags.make
-CMakeFiles/square.dir/src/square.cpp.o: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/square.dir/src/square.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/square.dir/src/square.cpp.o -c /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp
+CMakeFiles/square.dir/src/square_odom.cpp.o: CMakeFiles/square.dir/flags.make
+CMakeFiles/square.dir/src/square_odom.cpp.o: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/square.dir/src/square_odom.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/square.dir/src/square_odom.cpp.o -c /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp
 
-CMakeFiles/square.dir/src/square.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/square.dir/src/square.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp > CMakeFiles/square.dir/src/square.cpp.i
+CMakeFiles/square.dir/src/square_odom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/square.dir/src/square_odom.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp > CMakeFiles/square.dir/src/square_odom.cpp.i
 
-CMakeFiles/square.dir/src/square.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/square.dir/src/square.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp -o CMakeFiles/square.dir/src/square.cpp.s
+CMakeFiles/square.dir/src/square_odom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/square.dir/src/square_odom.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp -o CMakeFiles/square.dir/src/square_odom.cpp.s
 
 # Object files for target square
 square_OBJECTS = \
-"CMakeFiles/square.dir/src/square.cpp.o"
+"CMakeFiles/square.dir/src/square_odom.cpp.o"
 
 # External object files for target square
 square_EXTERNAL_OBJECTS =
 
-square: CMakeFiles/square.dir/src/square.cpp.o
+square: CMakeFiles/square.dir/src/square_odom.cpp.o
 square: CMakeFiles/square.dir/build.make
 square: /opt/ros/foxy/lib/librclcpp.so
-square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
-square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+square: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+square: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+square: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+square: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
 square: /opt/ros/foxy/lib/liblibstatistics_collector.so
 square: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 square: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
@@ -113,7 +113,12 @@ square: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 square: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 square: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 square: /opt/ros/foxy/lib/libtracetools.so
+square: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
+square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+square: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 square: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 square: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 square: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
