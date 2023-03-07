@@ -3,16 +3,14 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include <cmath>
 #include <iostream>
-#include <vector>
 
 using namespace std::chrono_literals;
 double x0;
 double y0;
 double xf;
 double yf;
-std::vector<int> distance;
-distance.resize(2);
-double angle;
+double angle0;
+double anglef;
 
 void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     if (msg->pose.pose.position.x==0 && msg->pose.pose.position.y==0){
@@ -21,14 +19,15 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     }
     xf = msg->pose.pose.position.x;
     yf = msg->pose.pose.position.y;
-    distance[0]=xf-x0;
-    distance[1]=yf-y0;
-    angle = atan2(y0,x0);
+    angle0 = atan2(y0,x0);
+    anglef = atan2(yf,xf);
+    
     std::cout << "Pos X: " << x << std::endl;
     std::cout << "Pos Y: " << y << std::endl;
-    std::cout << "Orientation: " << angle << std::endl;
-    std::cout << "Distance x: "<< distance[0] << std::endl;
-    std::cout << "Distance y: "<< distance[1] << std::endl;
+    std::cout << "Orientation: " << angle0 << std::endl;
+    std::cout << "Distance x: "<< xf-x0 << std::endl;
+    std::cout << "Distance y: "<< yf-y0 << std::endl;
+    std::cout << "Angular distance: "<<anglef-angle0<<std::endl;
 }
   
 int main(int argc, char * argv[]){
