@@ -22,8 +22,8 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     angle0 = atan2(y0,x0);
     anglef = atan2(yf,xf);
     
-    std::cout << "Pos X: " << x << std::endl;
-    std::cout << "Pos Y: " << y << std::endl;
+    std::cout << "Pos X: " << xf << std::endl;
+    std::cout << "Pos Y: " << yf << std::endl;
     std::cout << "Orientation: " << angle0 << std::endl;
     std::cout << "Distance x: "<< xf-x0 << std::endl;
     std::cout << "Distance y: "<< yf-y0 << std::endl;
@@ -63,8 +63,7 @@ int main(int argc, char * argv[]){
     }
     i=0, n=M_PI_2/(0.01 * angular_speed);
     while (rclcpp::ok() && (i<n)){
-        message.linear.x = 0.0; 
-        message.angular.z = 3.1416/20;
+        message.linear.x = 0.0;
         message.angular.z = angular_speed;
         publisher->publish(message);
         rclcpp::spin_some(node1);
