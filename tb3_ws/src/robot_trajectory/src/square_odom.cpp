@@ -10,9 +10,9 @@ double y;
 double angle;
 
 void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
-    x = msg->pose.pose.position.x;
-    y = msg->pose.pose.position.y;
-    angle = msg->pose.pose.orientation.w;
+    x0 = msg->pose.pose.position.x;
+    y0 = msg->pose.pose.position.y;
+    angle = atan2(y0,x0);
     std::cout << "Pos X: " << x << std::endl;
     std::cout << "Pos Y: " << y << std::endl;
     std::cout << "Orientation: " << angle << std::endl;
