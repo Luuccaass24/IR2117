@@ -1,0 +1,12 @@
+[0.020s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.055s] [35m[1mScanning dependencies of target square[0m
+[0.080s] [ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square_odom.cpp.o[0m
+[1.194s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.194s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:30:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle0[m[K’ was not declared in this scope; did you mean ‘[01m[Kanglef[m[K’?
+[1.194s]    30 |     std::cout << "Angular distance: "<<anglef-[01;31m[Kangle0[m[K<<std::endl;
+[1.194s]       |                                               [01;31m[K^~~~~~[m[K
+[1.194s]       |                                               [32m[Kanglef[m[K
+[2.681s] make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square_odom.cpp.o] Error 1
+[2.682s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
+[2.682s] make: *** [Makefile:141: all] Error 2
+[2.684s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6

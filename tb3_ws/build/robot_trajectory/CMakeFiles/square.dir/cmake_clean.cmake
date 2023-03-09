@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/square.dir/src/square_odom.cpp.o"
+  "CMakeFiles/square.dir/src/square.cpp.o"
   "square"
   "square.pdb"
 )
