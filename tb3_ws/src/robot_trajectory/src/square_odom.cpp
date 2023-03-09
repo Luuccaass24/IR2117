@@ -10,24 +10,44 @@ double xo;
 double yo;
 double xf;
 double yf;
+double xoo;
+double yoo;
+double zoo;
+double woo;
+double sini;
+double cosi;
 double angleo;
-double anglef;
+double distance;
 
 void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     if (msg->pose.pose.position.x==0 && msg->pose.pose.position.y==0){
         xo = msg->pose.pose.position.x;
         yo = msg->pose.pose.position.y;
+        xoo = msg->pose.pose.orientation.x;
+        yoo = msg->pose.pose.orientation.y;
+        zoo = msg->pose.pose.orientation.z;
+        woo = msg->pose.pose.orientation.w;
+        sini = 2*(woo*zoo + xoo*yoo);
+        cosi = 1-2*(yoo*yoo+zoo*zoo);
+        angleo = atan2(sini,cosi);
     }
     xf = msg->pose.pose.position.x;
     yf = msg->pose.pose.position.y;
-    angleo = atan2(yo,xo);
-    anglef = atan2(yf,xf);
+    distance = std::sqrt(std::pow(xf-xo,2)+std::pow(yf-yo,2));
+    double xfo =msg->pose.pose.orientation.x; 
+    double yfo = msg->pose.pose.orientation.y;
+    double wfo = msg->pose.pose.orientation.w;
+    double zfo = msg->pose.pose.orientation.z;
+    double sinf = 2*(wfo*zfo + xfo*yfo);
+    double cosf = 1-2*(yfo*yfo+zfo*zfo);
+    double anglef = atan2(sinf,cosf);
+    
     
     std::cout << "Pos X: " << xf << std::endl;
     std::cout << "Pos Y: " << yf << std::endl;
     std::cout << "Orientation: " << angleo << std::endl;
-    std::cout << "Distance x: "<< xf-xo << std::endl;
-    std::cout << "Distance y: "<< yf-yo << std::endl;
+    std::cout << "Distance: "<< std::sqrt(std::pow(xf-xo,2)+std::pow(yf-yo,2)) << std::endl;
+    
     std::cout << "Angular distance: "<<anglef-angleo<<std::endl;
 }
   
@@ -55,8 +75,8 @@ int main(int argc, char * argv[]){
     int angular_iterations = M_PI_2/(0.01 * angular_speed);
       
     int i=0;
-    while (rclcpp::ok() && (i<linear_iterations+angular_iterations)){
-        if (i<linear_iterations){
+    while (rclcpp::ok() && (i<=linear_iterations+angular_iterations)){
+        if (distance<=1.0){
             message.linear.x = linear_speed;
             message.angular.z = 0.0;
             publisher->publish(message);
@@ -71,11 +91,15 @@ int main(int argc, char * argv[]){
             loop_rate.sleep();
             i++;
         }
+        xo=xf;
+        yo=yf;
     }
     
   }
   message.linear.x = 0.0;
   message.angular.z = 0.0;
+  publisher->publish(message);
+  rclcpp::spin_some(node);
   rclcpp::shutdown();
   return 0;
 }

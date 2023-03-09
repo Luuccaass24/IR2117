@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.070s] [ 75%] Built target square
+[0.070s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[1.147s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.147s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:42:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+[1.148s]    42 |     distance = std::sqrt(std::pow(xf-xo,2)+std::pow(yf-yo,2))
+[1.148s]       |                                                              [01;31m[K^[m[K
+[1.148s]       |                                                              [32m[K;[m[K
+[1.148s]    43 |     [32m[Kdouble[m[K anglef = atan2(sinf,cosf);
+[1.148s]       |     [32m[K~~~~~~[m[K                                                    
+[1.150s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:50:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kanglef[m[K’ was not declared in this scope; did you mean ‘[01m[Kangleo[m[K’?
+[1.151s]    50 |     std::cout << "Angular distance: "<<[01;31m[Kanglef[m[K-angleo<<std::endl;
+[1.151s]       |                                        [01;31m[K^~~~~~[m[K
+[1.151s]       |                                        [32m[Kangleo[m[K
+[1.151s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:40:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksinf[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.151s]    40 |     double [01;35m[Ksinf[m[K = 2*(wfo*zfo + xfo*yfo);
+[1.151s]       |            [01;35m[K^~~~[m[K
+[1.151s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:41:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcosf[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.151s]    41 |     double [01;35m[Kcosf[m[K = 1-2*(yfo*yfo+zfo*zfo);
+[1.151s]       |            [01;35m[K^~~~[m[K
+[2.605s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[2.606s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+[2.606s] make: *** [Makefile:141: all] Error 2
+[2.607s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6

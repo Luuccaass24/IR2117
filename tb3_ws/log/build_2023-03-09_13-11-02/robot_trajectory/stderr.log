@@ -1,0 +1,35 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:26:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksini[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   26 |         double [01;35m[Ksini[m[K = 2*(woo*zoo + xoo*yoo);
+      |                [01;35m[K^~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:27:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcosi[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   27 |         double [01;35m[Kcosi[m[K = 1-2*(yoo*yoo+zoo*zoo);
+      |                [01;35m[K^~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:36:12:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K=[m[K’ token
+   36 |     double [01;31m[K=[m[K cosf = 1-2*(yfo*yfo+zfo*zfo);
+      |            [01;31m[K^[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:38:32:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat (*)(float) throw ()[m[K’ {aka ‘[01m[Kfloat (*)(float)[m[K’} to ‘[01m[Kdouble[m[K’
+   38 |     double anglef = atan2(sinf,[01;31m[Kcosf[m[K);
+      |                                [01;31m[K^~~~[m[K
+      |                                [01;31m[K|[m[K
+      |                                [01;31m[Kfloat (*)(float) throw () {aka float (*)(float)}[m[K
+In file included from [01m[K/usr/include/c++/9/cmath:45[m[K,
+                 from [01m[K/opt/ros/foxy/include/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:2[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:59:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kdouble atan2(double, double)[m[K’
+   59 | [01;36m[K_[m[K_MATHCALL (atan2,, (_Mdouble_ __y, _Mdouble_ __x));
+      | [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

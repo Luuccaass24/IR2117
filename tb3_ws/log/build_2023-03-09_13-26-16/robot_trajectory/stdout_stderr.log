@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target square_odom[0m
+[ 50%] Built target square
+[ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:42:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdouble[m[K’
+   42 |     distance = std::sqrt(std::pow(xf-xo,2)+std::pow(yf-yo,2))
+      |                                                              [01;31m[K^[m[K
+      |                                                              [32m[K;[m[K
+   43 |     [32m[Kdouble[m[K anglef = atan2(sinf,cosf);
+      |     [32m[K~~~~~~[m[K                                                    
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:50:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kanglef[m[K’ was not declared in this scope; did you mean ‘[01m[Kangleo[m[K’?
+   50 |     std::cout << "Angular distance: "<<[01;31m[Kanglef[m[K-angleo<<std::endl;
+      |                                        [01;31m[K^~~~~~[m[K
+      |                                        [32m[Kangleo[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:40:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksinf[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   40 |     double [01;35m[Ksinf[m[K = 2*(wfo*zfo + xfo*yfo);
+      |            [01;35m[K^~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:41:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcosf[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   41 |     double [01;35m[Kcosf[m[K = 1-2*(yfo*yfo+zfo*zfo);
+      |            [01;35m[K^~~~[m[K
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
