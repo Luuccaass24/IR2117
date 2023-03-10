@@ -45,7 +45,7 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     
     std::cout << "Pos X: " << xf << std::endl;
     std::cout << "Pos Y: " << yf << std::endl;
-    std::cout << "Orientation: " << angleo << std::endl;
+    std::cout << "Angulo inicial: " << angleo << std::endl;
     std::cout << "Distance: "<< std::sqrt(std::pow(xf-xo,2)+std::pow(yf-yo,2)) << std::endl;
     
     std::cout << "Angular distance: "<<anglef-angleo<<std::endl;
@@ -71,30 +71,28 @@ int main(int argc, char * argv[]){
   double square_length = node->get_parameter("square_length").get_parameter_value().get<double>();
   
   for (int j=0;j<4;j++){
-    int linear_iterations = square_length/(0.01 * linear_speed);
-    int angular_iterations = M_PI_2/(0.01 * angular_speed);
       
     int i=0;
-    while (rclcpp::ok() && (i<=linear_iterations+angular_iterations)){
-        if (distance<=1.0){
-            message.linear.x = linear_speed;
-            message.angular.z = 0.0;
-            publisher->publish(message);
-            rclcpp::spin_some(node);
-            loop_rate.sleep();
-            i++;
-        }else{
-            message.linear.x = 0.0;
-            message.angular.z = angular_speed;
-            publisher->publish(message);
-            rclcpp::spin_some(node);
-            loop_rate.sleep();
-            i++;
-        }
-        xo=xf;
-        yo=yf;
+    while (rclcpp::ok() && (distance <= square_length)){
+        angleo=anglef;
+        message.linear.x = linear_speed;
+        message.angular.z = 0.0;
+        publisher->publish(message);
+        rclcpp::spin_some(node);
+        oop_rate.sleep();
+        i++;
     }
-    
+    xo=xf;
+    yo=yf;
+    while (rclcpp::ok() && ( angle <= M_PI_2 + angleo <= )){
+        message.linear.x = 0.0;
+        message.angular.z = angular_speed;
+        publisher->publish(message);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+        i++;
+    }
+    angleo=anglef;
   }
   message.linear.x = 0.0;
   message.angular.z = 0.0;
