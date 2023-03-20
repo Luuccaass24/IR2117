@@ -1,0 +1,21 @@
+[0.024s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.057s] [35m[1mScanning dependencies of target square_odom[0m
+[0.071s] [ 50%] Built target square
+[0.073s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:112:2:[m[K [01;35m[Kwarning: [m[Kstyle of line directive is a GCC extension
+[0.140s]   112 | #[01;35m[K0[m[K
+[0.140s]       |  [01;35m[K^[m[K
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K [01;35m[Kwarning: [m[Kstyle of line directive is a GCC extension
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K [01;31m[Kerror: [m[K"1.41" after # is not a positive integer
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:1:2:[m[K [01;35m[Kwarning: [m[Kstyle of line directive is a GCC extension
+[0.140s]     1 | #[01;35m[Kincl[m[Kude <chrono>
+[0.140s]       |  [01;35m[K^~~~[m[K
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:1:2:[m[K [01;31m[Kerror: [m[K"2.85" after # is not a positive integer
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:2:2:[m[K [01;35m[Kwarning: [m[Kstyle of line directive is a GCC extension
+[0.140s]     2 | #[01;35m[Kincl[m[Kude "rclcpp/rclcpp.hpp"
+[0.140s]       |  [01;35m[K^~~~[m[K
+[0.140s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:2:2:[m[K [01;31m[Kerror: [m[K"4.29" after # is not a positive integer
+[2.687s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[2.687s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+[2.687s] make: *** [Makefile:141: all] Error 2
+[2.689s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6

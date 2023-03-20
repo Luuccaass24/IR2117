@@ -17,6 +17,7 @@ double woo;
 double sini;
 double cosi;
 double angleo;
+double anglef;
 double distance;
 
 void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
@@ -40,7 +41,7 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     double zfo = msg->pose.pose.orientation.z;
     double sinf = 2*(wfo*zfo + xfo*yfo);
     double cosf = 1-2*(yfo*yfo+zfo*zfo);
-    double anglef = atan2(sinf,cosf);
+    anglef = atan2(sinf,cosf);
     
     
     std::cout << "Pos X: " << xf << std::endl;
@@ -74,17 +75,28 @@ int main(int argc, char * argv[]){
       
     int i=0;
     while (rclcpp::ok() && (distance <= square_length)){
-        angleo=anglef;
         message.linear.x = linear_speed;
         message.angular.z = 0.0;
         publisher->publish(message);
         rclcpp::spin_some(node);
-        oop_rate.sleep();
+        loop_rate.sleep();
         i++;
     }
     xo=xf;
     yo=yf;
-    while (rclcpp::ok() && ( angle <= M_PI_2 + angleo <= )){
+    if (anglef < 0){
+        anglef =anglef + M_PI * 2;
+    }
+    while (rclcpp::ok() && ( anglef < M_PI_2 + angleo - 0.11 )){
+        if (anglef < 0){
+        anglef =anglef + M_PI * 2;
+        }
+        if (j==0){
+            anglef+=0.04;
+        }
+        if (j==2){
+            anglef-=0.11;
+        }
         message.linear.x = 0.0;
         message.angular.z = angular_speed;
         publisher->publish(message);

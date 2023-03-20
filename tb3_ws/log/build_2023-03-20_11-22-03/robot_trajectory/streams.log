@@ -1,0 +1,20 @@
+[0.022s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.054s] [35m[1mScanning dependencies of target square_odom[0m
+[0.069s] [ 50%] Built target square
+[0.071s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[0.138s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:112:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h0
+[0.138s]   112 | #[01;31m[Kh0[m[K
+[0.139s]       |  [01;31m[K^~[m[K
+[0.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:113:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h1
+[0.139s]   113 | #[01;31m[Kh1[m[K.41
+[0.139s]       |  [01;31m[K^~[m[K
+[0.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:114:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h2
+[0.139s]   114 | #[01;31m[Kh2[m[K.85
+[0.139s]       |  [01;31m[K^~[m[K
+[0.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:115:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h4
+[0.139s]   115 | #[01;31m[Kh4[m[K.29
+[0.139s]       |  [01;31m[K^~[m[K
+[2.684s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[2.684s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+[2.684s] make: *** [Makefile:141: all] Error 2
+[2.686s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6

@@ -1,0 +1,15 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:112:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h0
+  112 | #[01;31m[Kh0[m[K
+      |  [01;31m[K^~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:113:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h1
+  113 | #[01;31m[Kh1[m[K.41
+      |  [01;31m[K^~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:114:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h2
+  114 | #[01;31m[Kh2[m[K.85
+      |  [01;31m[K^~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:115:2:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #h4
+  115 | #[01;31m[Kh4[m[K.29
+      |  [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
