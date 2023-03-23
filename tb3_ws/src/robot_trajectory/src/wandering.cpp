@@ -11,7 +11,7 @@
 using namespace std::chrono_literals;
 using  Eigen::VectorXd;
 VectorXd vect;
-
+float proximo;
 std::vector<float> v;
 
 
@@ -32,7 +32,8 @@ void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
             n++;
         }
     }
-    std::cout<<"Min: "<<vect.minCoeff()<<std::endl;
+    proximo = vect.minCoeff();
+    std::cout<<"Min: "<<proximo<<std::endl;
 }
   
 int main(int argc, char * argv[]){
@@ -47,10 +48,17 @@ int main(int argc, char * argv[]){
   geometry_msgs::msg::Twist message;
   rclcpp::WallRate loop_rate(10ms);
   while (rclcpp::ok()){
-    message.linear.x = 0;
-    publisher->publish(message);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
+    if (proximo < 1.5){
+        message.linear.x = 0;
+        publisher->publish(message);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+    }else{
+        message.linear.x = 0;
+        publisher->publish(message);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+    }
   }
   rclcpp::shutdown();
   return 0;
