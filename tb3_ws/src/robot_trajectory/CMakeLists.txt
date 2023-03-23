@@ -25,12 +25,15 @@ find_package(nav_msgs REQUIRED)
 # find_package(<dependency> REQUIRED)
 add_executable(square src/square.cpp)
 add_executable(square_odom src/square_odom.cpp)
+add_executable(wandering src/wandering.cpp)
 ament_target_dependencies(square_odom rclcpp nav_msgs)
 ament_target_dependencies(square rclcpp geometry_msgs)
+ament_target_dependencies(wandering rclcpp geometry_msgs)
 
 install(TARGETS
     square
     square_odom
+    wandering
     DESTINATION lib/${PROJECT_NAME}
 )
 
