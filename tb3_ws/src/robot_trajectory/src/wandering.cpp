@@ -12,10 +12,14 @@ std::vector<float> v;
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
     v = msg->ranges;
-    for(int i=0;i<=270;i=i+90){
+    std::cout<<"----"<<std::endl;
+    for(int i=0;i<10;i++){
         std::cout<<v[i]<<std::endl;
     }
-    std::cout<<"----";
+    std::cout<<"----"<<std::endl;
+    for(int i=350;i<=359;i++){
+        std::cout<<v[i]<<std::endl;
+    }
 }
   
 int main(int argc, char * argv[]){
