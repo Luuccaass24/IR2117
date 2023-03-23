@@ -1,0 +1,17 @@
+[0.019s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.061s] [ 16%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[0.070s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No existe el archivo o el directorio
+[0.070s]     2 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.070s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.070s] compilation terminated.
+[0.070s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[0.071s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Error 2
+[0.071s] make[1]: *** Se espera a que terminen otras tareas....
+[2.488s] [ 66%] [32m[1mLinking CXX executable square[0m
+[2.730s] [ 66%] Built target square
+[4.487s] [ 83%] [32m[1mLinking CXX executable square_odom[0m
+[5.056s] [ 83%] Built target square_odom
+[5.058s] make: *** [Makefile:141: all] Error 2
+[5.059s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6

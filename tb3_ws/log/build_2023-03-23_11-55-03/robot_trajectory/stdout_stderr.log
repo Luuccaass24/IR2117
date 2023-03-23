@@ -1,0 +1,15 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No existe el archivo o el directorio
+    2 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Error 2
+make[1]: *** Se espera a que terminen otras tareas....
+[ 66%] [32m[1mLinking CXX executable square[0m
+[ 66%] Built target square
+[ 83%] [32m[1mLinking CXX executable square_odom[0m
+[ 83%] Built target square_odom
+make: *** [Makefile:141: all] Error 2
