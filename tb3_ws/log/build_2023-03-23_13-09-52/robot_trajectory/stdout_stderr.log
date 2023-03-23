@@ -1,0 +1,20 @@
+[35m[1mScanning dependencies of target wandering[0m
+[ 66%] Built target square
+[ 66%] Built target square_odom
+[ 83%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:14:1:[m[K [01;31m[Kerror: [m[K‘[01m[KVector20d[m[K’ does not name a type
+   14 | [01;31m[KVector20d[m[K vect;
+      | [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvect[m[K’ was not declared in this scope
+   21 |         [01;31m[Kvect[m[K.push_back(v[i]);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvect[m[K’ was not declared in this scope
+   26 |         [01;31m[Kvect[m[K.push_back(v[i]);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvect[m[K’ was not declared in this scope
+   28 |     std::cout<<"Min: "<<[01;31m[Kvect[m[K.minCoeff()<<std::endl;
+      |                         [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

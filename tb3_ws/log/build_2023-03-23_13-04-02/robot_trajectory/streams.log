@@ -1,0 +1,13 @@
+[0.021s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.058s] [35m[1mScanning dependencies of target wandering[0m
+[0.072s] [ 66%] Built target square
+[0.072s] [ 66%] Built target square_odom
+[0.076s] [ 83%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.148s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:9:10:[m[K [01;31m[Kfatal error: [m[KEigen/Dense: No existe el archivo o el directorio
+[0.148s]     9 | #include [01;31m[K<Eigen/Dense>[m[K
+[0.148s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.148s] compilation terminated.
+[0.150s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[0.151s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Error 2
+[0.151s] make: *** [Makefile:141: all] Error 2
+[0.153s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6

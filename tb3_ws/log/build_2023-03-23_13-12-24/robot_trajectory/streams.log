@@ -1,0 +1,16 @@
+[0.022s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
+[0.062s] [35m[1mScanning dependencies of target wandering[0m
+[0.076s] [ 66%] Built target square_odom
+[0.076s] [ 66%] Built target square
+[0.081s] [ 83%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[1.620s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.620s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:24:14:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::VectorXd[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<double, -1, 1>[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+[1.620s]    24 |         vect.[01;31m[Kpush_back[m[K(v[i]);
+[1.620s]       |              [01;31m[K^~~~~~~~~[m[K
+[1.620s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:29:14:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::VectorXd[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<double, -1, 1>[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+[1.620s]    29 |         vect.[01;31m[Kpush_back[m[K(v[i]);
+[1.620s]       |              [01;31m[K^~~~~~~~~[m[K
+[3.155s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[3.155s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Error 2
+[3.155s] make: *** [Makefile:141: all] Error 2
+[3.156s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j6 -l6
