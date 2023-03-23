@@ -1,0 +1,13 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:19:34:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   19 | int main(int argc, char * argv[])[01;31m[K{[m[K
+      |                                  [01;31m[K^[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:38:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   38 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:13:70:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   13 | void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)[01;36m[K{[m[K
+      |                                                                      [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
