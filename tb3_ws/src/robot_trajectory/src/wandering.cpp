@@ -10,30 +10,35 @@
 
 using namespace std::chrono_literals;
 using  Eigen::VectorXd;
-VectorXd vect;
-float proximo;
+VectorXd vect_izq;
+VectorXd vect_drch;
+float proximo_izq;
+float proximo_drch;
 std::vector<float> v;
 
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
     v = msg->ranges;
-    vect.conservativeResize(20);
-    int n=10;
+    vect_izq.conservativeResize(10);
+    vect_drch.conservativeResize(10);
+    int n=0;
     std::cout<<"----"<<std::endl;
     for(int i=0;i<10;i++){
         std::cout<<v[i]<<std::endl;
-        vect(i)=v[i];
+        vect_izq(i)=v[i];
     }
     std::cout<<"----"<<std::endl;
     for(int i=350;i<=359;i++){
         std::cout<<v[i]<<std::endl;
         if (i<360){
-            vect(n)=v[i];
+            vect_drch(n)=v[i];
             n++;
         }
     }
-    proximo = vect.minCoeff();
-    std::cout<<"Min: "<<proximo<<std::endl;
+    proximo_izq = vect_izq.minCoeff();
+    proximo_drch = vect_drch.minCoeff();
+    std::cout<<"Min_izq: "<<proximo_izq<<std::endl;
+    std::cout<<"Min_drch: "<<proximo_drch<<std::endl;
 }
   
 int main(int argc, char * argv[]){
@@ -49,14 +54,18 @@ int main(int argc, char * argv[]){
   rclcpp::WallRate loop_rate(10ms);
   
   while (rclcpp::ok()){
-    if (proximo <= 1.8){
+    if (proximo_drch <= 1.5 and proximo_izq <= 1.5){
         message.linear.x = 0;
-        message.angular.z = 0.1;
+        if (proximo_drch < proximo_izq){
+            message.angular.z = 0.1;
+        }else{
+            message.angular.z = -0.1;
+        }
         publisher->publish(message);
         rclcpp::spin_some(node);
         loop_rate.sleep();
     }else{
-        message.linear.x = 0.5;
+        message.linear.x = 0.3;
         message.angular.z = 0;
         publisher->publish(message);
         rclcpp::spin_some(node);
