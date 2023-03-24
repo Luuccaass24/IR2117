@@ -47,14 +47,17 @@ int main(int argc, char * argv[]){
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   geometry_msgs::msg::Twist message;
   rclcpp::WallRate loop_rate(10ms);
+  
   while (rclcpp::ok()){
-    if (proximo < 1.5){
+    if (proximo <= 1.8){
         message.linear.x = 0;
+        message.angular.z = 0;
         publisher->publish(message);
         rclcpp::spin_some(node);
         loop_rate.sleep();
     }else{
-        message.linear.x = 0;
+        message.linear.x = 0.5;
+        message.angular.z = 0;
         publisher->publish(message);
         rclcpp::spin_some(node);
         loop_rate.sleep();
