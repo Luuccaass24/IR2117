@@ -92,7 +92,7 @@ int main(int argc, char * argv[]){
         anglef =anglef + M_PI * 2;
         }
         if (j==0){
-            anglef+=0.04;
+            anglef+=0.02;
         }
         if (j==2){
             anglef-=0.11;
