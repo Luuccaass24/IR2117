@@ -51,7 +51,7 @@ int main(int argc, char * argv[]){
   while (rclcpp::ok()){
     if (proximo <= 1.8){
         message.linear.x = 0;
-        message.angular.z = 0;
+        message.angular.z = 0.1;
         publisher->publish(message);
         rclcpp::spin_some(node);
         loop_rate.sleep();
