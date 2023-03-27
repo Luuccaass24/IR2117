@@ -42,14 +42,16 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
     double sinf = 2*(wfo*zfo + xfo*yfo);
     double cosf = 1-2*(yfo*yfo+zfo*zfo);
     anglef = atan2(sinf,cosf);
-    
+    if (anglef < 0){
+        anglef += 2 * M_PI;
+    }
     
     std::cout << "Pos X: " << xf << std::endl;
     std::cout << "Pos Y: " << yf << std::endl;
     std::cout << "Angulo inicial: " << angleo << std::endl;
     std::cout << "Distance: "<< std::sqrt(std::pow(xf-xo,2)+std::pow(yf-yo,2)) << std::endl;
     
-    std::cout << "Angular distance: "<<anglef-angleo<<std::endl;
+    std::cout << "Angulo final: "<<anglef<<std::endl;
 }
   
 int main(int argc, char * argv[]){
@@ -62,8 +64,8 @@ int main(int argc, char * argv[]){
   //publisher
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   node->declare_parameter("square_length", 1.0);
-  node->declare_parameter("linear_speed", 0.1);
-  node->declare_parameter("angular_speed",M_PI_2);
+  node->declare_parameter("linear_speed", 0.2);
+  node->declare_parameter("angular_speed", 0.25);
   geometry_msgs::msg::Twist message;
   rclcpp::WallRate loop_rate(10ms);
 
@@ -84,18 +86,15 @@ int main(int argc, char * argv[]){
     }
     xo=xf;
     yo=yf;
-    if (anglef < 0){
-        anglef =anglef + M_PI * 2;
-    }
-    while (rclcpp::ok() && ( anglef < M_PI_2 + angleo - 0.11 )){
-        if (anglef < 0){
-        anglef =anglef + M_PI * 2;
-        }
+    while (rclcpp::ok() && ( anglef < M_PI_2 + angleo)){
         if (j==0){
-            anglef+=0.02;
+            anglef+=0.045;
         }
         if (j==2){
             anglef-=0.11;
+        }
+        if (j==3 and anglef > 6.27){
+            break;
         }
         message.linear.x = 0.0;
         message.angular.z = angular_speed;
