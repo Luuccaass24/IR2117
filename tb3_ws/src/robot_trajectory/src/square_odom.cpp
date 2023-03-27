@@ -88,7 +88,7 @@ int main(int argc, char * argv[]){
     yo=yf;
     while (rclcpp::ok() && ( anglef < M_PI_2 + angleo)){
         if (j==0){
-            anglef+=0.045;
+            anglef-=0.045;
         }
         if (j==2){
             anglef-=0.11;
