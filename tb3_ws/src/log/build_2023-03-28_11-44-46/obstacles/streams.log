@@ -1,0 +1,74 @@
+[0.034s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles
+[0.137s] -- The C compiler identification is GNU 9.4.0
+[0.249s] -- The CXX compiler identification is GNU 9.4.0
+[0.259s] -- Check for working C compiler: /usr/bin/cc
+[0.439s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.444s] -- Detecting C compiler ABI info
+[0.641s] -- Detecting C compiler ABI info - done
+[0.676s] -- Detecting C compile features
+[0.676s] -- Detecting C compile features - done
+[0.687s] -- Check for working CXX compiler: /usr/bin/c++
+[0.884s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.893s] -- Detecting CXX compiler ABI info
+[1.099s] -- Detecting CXX compiler ABI info - done
+[1.146s] -- Detecting CXX compile features
+[1.147s] -- Detecting CXX compile features - done
+[1.156s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.181s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.181s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.373s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.405s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.410s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.468s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.495s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.554s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.594s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.595s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.600s] -- Looking for pthread.h
+[1.778s] -- Looking for pthread.h - found
+[1.794s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.981s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.981s] -- Looking for pthread_create in pthreads
+[2.107s] -- Looking for pthread_create in pthreads - not found
+[2.116s] -- Looking for pthread_create in pthread
+[2.301s] -- Looking for pthread_create in pthread - found
+[2.321s] -- Found Threads: TRUE  
+[2.431s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.513s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[2.592s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.682s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.688s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.688s] -- Configured cppcheck include dirs: 
+[2.688s] -- Configured cppcheck exclude dirs and/or files: 
+[2.693s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.693s] -- Configured cpplint exclude dirs and/or files: 
+[2.693s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.694s] -- Added test 'lint_cmake' to check CMake code style
+[2.695s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.699s] -- Added test 'uncrustify' to check C / C++ code style
+[2.699s] -- Configured uncrustify additional arguments: 
+[2.700s] -- Added test 'xmllint' to check XML markup files
+[2.716s] -- Configuring done
+[2.721s] -- Generating done
+[2.740s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles
+[2.747s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles
+[2.757s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j6 -l6
+[2.868s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j6 -l6
+[2.919s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles
+[2.932s] -- Install configuration: ""
+[2.932s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+[2.934s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+[2.936s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+[2.937s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+[2.939s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/path.sh
+[2.939s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/path.dsv
+[2.941s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.bash
+[2.943s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.sh
+[2.946s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.zsh
+[2.951s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.dsv
+[2.954s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/package.dsv
+[2.956s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/packages/obstacles
+[2.957s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+[2.959s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+[2.961s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/package.xml
+[2.965s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/obstacles

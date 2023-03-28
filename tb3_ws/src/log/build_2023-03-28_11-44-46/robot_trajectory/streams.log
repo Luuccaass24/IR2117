@@ -1,0 +1,74 @@
+[0.019s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/robot_trajectory
+[0.112s] -- The C compiler identification is GNU 9.4.0
+[0.223s] -- The CXX compiler identification is GNU 9.4.0
+[0.236s] -- Check for working C compiler: /usr/bin/cc
+[0.418s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.426s] -- Detecting C compiler ABI info
+[0.620s] -- Detecting C compiler ABI info - done
+[0.651s] -- Detecting C compile features
+[0.651s] -- Detecting C compile features - done
+[0.666s] -- Check for working CXX compiler: /usr/bin/c++
+[0.874s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.889s] -- Detecting CXX compiler ABI info
+[1.079s] -- Detecting CXX compiler ABI info - done
+[1.118s] -- Detecting CXX compile features
+[1.119s] -- Detecting CXX compile features - done
+[1.134s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.158s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.158s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.347s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.379s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.383s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.443s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.467s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.525s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.564s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.565s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.569s] -- Looking for pthread.h
+[1.757s] -- Looking for pthread.h - found
+[1.773s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.961s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.961s] -- Looking for pthread_create in pthreads
+[2.087s] -- Looking for pthread_create in pthreads - not found
+[2.092s] -- Looking for pthread_create in pthread
+[2.280s] -- Looking for pthread_create in pthread - found
+[2.294s] -- Found Threads: TRUE  
+[2.402s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[2.428s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.483s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.537s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.629s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.633s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.633s] -- Configured cppcheck include dirs: 
+[2.633s] -- Configured cppcheck exclude dirs and/or files: 
+[2.637s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.637s] -- Configured cpplint exclude dirs and/or files: 
+[2.638s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.639s] -- Added test 'lint_cmake' to check CMake code style
+[2.640s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.644s] -- Added test 'uncrustify' to check C / C++ code style
+[2.644s] -- Configured uncrustify additional arguments: 
+[2.645s] -- Added test 'xmllint' to check XML markup files
+[2.661s] -- Configuring done
+[2.675s] -- Generating done
+[2.691s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory
+[2.701s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/robot_trajectory
+[2.716s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j6 -l6
+[2.867s] [35m[1mScanning dependencies of target wandering[0m
+[2.867s] [35m[1mScanning dependencies of target square_odom[0m
+[2.867s] [35m[1mScanning dependencies of target square[0m
+[2.993s] [ 16%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[2.998s] [ 33%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[3.005s] [ 50%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[21.978s] make[2]: *** Se borra el archivo 'CMakeFiles/wandering.dir/src/wandering.cpp.o'
+[21.978s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[21.978s] make[2]: *** Se espera a que terminen otras tareas....
+[21.978s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[21.978s] make[2]: *** Se borra el archivo 'CMakeFiles/square.dir/src/square.cpp.o'
+[21.978s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/square_odom.dir/all] Error 2
+[21.978s] make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Interrupción
+[21.978s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/square.dir/all] Interrupción
+[21.978s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Interrupción
+[21.978s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Interrupción
+[21.978s] make: *** [Makefile:141: all] Interrupción
+[21.981s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j6 -l6

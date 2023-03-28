@@ -1,0 +1,57 @@
+[0.030s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles
+[0.403s] -- The C compiler identification is GNU 9.4.0
+[0.723s] -- The CXX compiler identification is GNU 9.4.0
+[0.737s] -- Check for working C compiler: /usr/bin/cc
+[1.065s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.070s] -- Detecting C compiler ABI info
+[1.389s] -- Detecting C compiler ABI info - done
+[1.420s] -- Detecting C compile features
+[1.421s] -- Detecting C compile features - done
+[1.431s] -- Check for working CXX compiler: /usr/bin/c++
+[1.736s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.743s] -- Detecting CXX compiler ABI info
+[2.033s] -- Detecting CXX compiler ABI info - done
+[2.061s] -- Detecting CXX compile features
+[2.062s] -- Detecting CXX compile features - done
+[2.072s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.106s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.106s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.308s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.363s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.439s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.471s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.539s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.591s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.593s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.603s] -- Looking for pthread.h
+[2.850s] -- Looking for pthread.h - found
+[2.857s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.186s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.186s] -- Looking for pthread_create in pthreads
+[3.331s] -- Looking for pthread_create in pthreads - not found
+[3.339s] -- Looking for pthread_create in pthread
+[3.672s] -- Looking for pthread_create in pthread - found
+[3.684s] -- Found Threads: TRUE  
+[3.808s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.904s] CMake Error at CMakeLists.txt:22 (find_package):
+[3.904s]   By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this
+[3.904s]   project has asked CMake to find a package configuration file provided by
+[3.905s]   "example_interfaces", but CMake did not find one.
+[3.905s] 
+[3.905s]   Could not find a package configuration file provided by
+[3.905s]   "example_interfaces" with any of the following names:
+[3.905s] 
+[3.905s]     example_interfacesConfig.cmake
+[3.905s]     example_interfaces-config.cmake
+[3.905s] 
+[3.905s]   Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or
+[3.905s]   set "example_interfaces_DIR" to a directory containing one of the above
+[3.905s]   files.  If "example_interfaces" provides a separate development package or
+[3.905s]   SDK, be sure it has been installed.
+[3.905s] 
+[3.905s] 
+[3.905s] -- Configuring incomplete, errors occurred!
+[3.905s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles/CMakeOutput.log".
+[3.906s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles/CMakeFiles/CMakeError.log".
+[3.913s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/build/obstacles' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/install/obstacles
