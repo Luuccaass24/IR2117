@@ -1,3 +1,4 @@
+/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/lib/obstacles/detector
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
