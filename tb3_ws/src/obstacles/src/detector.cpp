@@ -5,6 +5,10 @@
 
 std::shared_ptr< rclcpp::Publisher<example_interfaces::msg::Bool> > publisher;
 
+float obs_angle_min;
+float obs_angle_max;
+float obs_threshold;
+
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
     example_interfaces::msg::Bool out_msg;
     out_msg.data = false;
