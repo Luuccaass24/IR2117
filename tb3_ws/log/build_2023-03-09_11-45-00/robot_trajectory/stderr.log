@@ -1,8 +1,0 @@
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:30:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle0[m[K’ was not declared in this scope; did you mean ‘[01m[Kanglef[m[K’?
-   30 |     std::cout << "Angular distance: "<<anglef-[01;31m[Kangle0[m[K<<std::endl;
-      |                                               [01;31m[K^~~~~~[m[K
-      |                                               [32m[Kanglef[m[K
-make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square_odom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

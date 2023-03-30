@@ -1,7 +1,0 @@
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:26:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksini[m[K’ [[01;35m[K-Wunused-variable[m[K]
-   26 |         double [01;35m[Ksini[m[K = 2*(woo*zoo + xoo*yoo);
-      |                [01;35m[K^~~~[m[K
-[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:27:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcosi[m[K’ [[01;35m[K-Wunused-variable[m[K]
-   27 |         double [01;35m[Kcosi[m[K = 1-2*(yoo*yoo+zoo*zoo);
-      |                [01;35m[K^~~~[m[K

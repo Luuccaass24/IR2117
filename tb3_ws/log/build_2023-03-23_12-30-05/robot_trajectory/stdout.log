@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target wandering[0m
-[ 66%] Built target square
-[ 66%] Built target square_odom
-[ 83%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
