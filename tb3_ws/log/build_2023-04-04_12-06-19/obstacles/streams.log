@@ -1,0 +1,50 @@
+[0.025s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
+[0.076s] [ 25%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[0.082s] [ 50%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[1.041s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_front(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.041s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:11:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.041s]    11 | void callback_front([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K){
+[1.041s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.042s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_left(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.042s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:16:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.042s]    16 | void callback_left([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K){
+[1.042s]       |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.042s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_right(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.042s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:21:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.042s]    21 | void callback_right([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K){
+[1.042s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.052s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.052s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:32:7:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto subs_front[m[K’
+[1.052s]    32 |  auto [01;31m[Ksubs_front[m[K = node->create_subscription<example_interfaces::msg::Bool>("/right/obstacle", 10 ,callback_right);
+[1.053s]       |       [01;31m[K^~~~~~~~~~[m[K
+[1.053s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:30:7:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<example_interfaces::msg::Bool_<std::allocator<void> >, std::allocator<void>, rclcpp::message_memory_strategy::MessageMemoryStrategy<example_interfaces::msg::Bool_<std::allocator<void> >, std::allocator<void> > > > subs_front[m[K’
+[1.053s]    30 |  auto [01;36m[Ksubs_front[m[K = node->create_subscription<example_interfaces::msg::Bool>("/front/obstacle", 10 ,callback_front);
+[1.053s]       |       [01;36m[K^~~~~~~~~~[m[K
+[1.062s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:64:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kbreak[m[K’
+[1.062s]    64 |      message.linear.x
+[1.062s]       |                      [01;31m[K^[m[K
+[1.062s]       |                      [32m[K;[m[K
+[1.062s]    65 |      [32m[Kbreak[m[K;
+[1.062s]       |      [32m[K~~~~~[m[K            
+[1.062s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:64:21:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[1.062s]    64 |      [01;35m[Kmessage.linear.x[m[K
+[1.062s]       |      [01;35m[K~~~~~~~~~~~~~~~^[m[K
+[1.062s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:70:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.063s]    70 | [01;31m[K}[m[K
+[1.063s]       | [01;31m[K^[m[K
+[1.063s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:41:22:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.063s]    41 |  while (rclcpp::ok())[01;36m[K{[m[K
+[1.063s]       |                      [01;36m[K^[m[K
+[1.063s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:70:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.063s]    70 | [01;31m[K}[m[K
+[1.063s]       | [01;31m[K^[m[K
+[1.063s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:26:34:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.063s]    26 | int main(int argc, char * argv[])[01;36m[K{[m[K
+[1.063s]       |                                  [01;36m[K^[m[K
+[2.336s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[2.337s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[2.337s] make[1]: *** Se espera a que terminen otras tareas....
+[4.339s] [ 75%] [32m[1mLinking CXX executable detector[0m
+[4.830s] [ 75%] Built target detector
+[4.831s] make: *** [Makefile:141: all] Error 2
+[4.833s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
