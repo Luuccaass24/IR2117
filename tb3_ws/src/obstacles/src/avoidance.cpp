@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string.h>
 #include <chrono>
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
@@ -5,23 +7,27 @@
 
 using namespace std::chrono_literals;
 
-bool front_obstacle, left_obstacle, right_obstacle;
-std::string state;
+enum State {
+    S1,
+    S2,
+    S3
+};
+
+State state = S1;
+
+bool front_obstacle = false, left_obstacle = false, right_obstacle = false;
 
 
 void callback_front(const example_interfaces::msg::Bool::SharedPtr msg){
-	example_interfaces::msg::Bool out_msg;
-    	front_obstacle = out_msg.data;
+    	front_obstacle = msg->data;
 }
 
 void callback_left(const example_interfaces::msg::Bool::SharedPtr msg){
-	example_interfaces::msg::Bool out_msg;
-    	left_obstacle = out_msg.data;
+    	left_obstacle = msg->data;
 }
 
 void callback_right(const example_interfaces::msg::Bool::SharedPtr msg){
-	example_interfaces::msg::Bool out_msg;
-    	right_obstacle = out_msg.data;
+    	right_obstacle = msg->data;
 }
 
 int main(int argc, char * argv[]){
@@ -37,27 +43,42 @@ int main(int argc, char * argv[]){
 	
 	
 	while (rclcpp::ok()){
-	state = " ";
-	if (front_obstacle == false && left_obstacle == false && right_obstacle == false){
-		state = "front";
-	}else if (front_obstacle == true && left_obstacle == false && right_obstacle==false){
-		state = "random";
-	}else if (front_obstacle == true && left_obstacle == true && right_obstacle == false){
-		state = "right";
-	}else{
-		state = "left";
-	}
-		switch(state){
-			case "front":
-				message.linear.x = 0.2;
-				message.angular.z = 0;
-				publisher->publish(message);
-				rclcpp::spin_some(node);
-				loop_rate.sleep();
-				break;
-			case "random":
-	
-		}
+        switch(state) {
+            case S1:
+                if(front_obstacle && (right_obstacle || left_obstacle)){
+                    state=S2;
+                }
+                break;
+            case S2:
+                if (front_obstacle && left_obstacle){
+                    state=S3;
+                }else if (front_obstacle && right_obstacle){
+                    state=S1;
+                }
+                break;
+            case S3:
+                state = S1;
+        }
+        if (state == S1){
+            message.linear.x = 0.2;
+            message.angular.z = 0;
+            publisher->publish(message);
+            rclcpp::spin_some(node);
+            loop_rate.sleep();
+        }else if (state == S2){
+            message.linear.x = 0;
+            message.angular.z = 0.2;
+            publisher->publish(message);
+            rclcpp::spin_some(node);
+            loop_rate.sleep();
+        }else if (state == S3){
+            message.linear.x = 0;
+            message.angular.z = -0.2;
+            publisher->publish(message);
+            rclcpp::spin_some(node);
+            loop_rate.sleep();
+        }
+        
 	}
 	rclcpp::shutdown();
 	return 0;
