@@ -1,0 +1,27 @@
+[0.028s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
+[0.061s] [35m[1mScanning dependencies of target avoidance[0m
+[0.079s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[0.079s] [ 75%] Built target detector
+[1.157s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.157s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:56:14:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kbool[m[K’ to ‘[01m[Kconst char*[m[K’
+[1.157s]    56 |       printf([01;31m[Kright_obstacle[m[K);
+[1.157s]       |              [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.157s]       |              [01;31m[K|[m[K
+[1.157s]       |              [01;31m[Kbool[m[K
+[1.157s] In file included from [01m[K/usr/include/c++/9/cstdio:42[m[K,
+[1.157s]                  from [01m[K/usr/include/c++/9/ext/string_conversions.h:43[m[K,
+[1.157s]                  from [01m[K/usr/include/c++/9/bits/basic_string.h:6496[m[K,
+[1.158s]                  from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.158s]                  from [01m[K/usr/include/c++/9/bits/locale_classes.h:40[m[K,
+[1.158s]                  from [01m[K/usr/include/c++/9/bits/ios_base.h:41[m[K,
+[1.158s]                  from [01m[K/usr/include/c++/9/ios:42[m[K,
+[1.158s]                  from [01m[K/usr/include/c++/9/ostream:38[m[K,
+[1.158s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.158s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:1[m[K:
+[1.158s] [01m[K/usr/include/stdio.h:332:43:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kint printf(const char*, ...)[m[K’
+[1.158s]   332 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+[1.158s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.600s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[2.601s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[2.601s] make: *** [Makefile:141: all] Error 2
+[2.603s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6

@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target avoidance[0m
+[ 50%] Built target detector
+[ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:56:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint[m[K’ was not declared in this scope; did you mean ‘[01m[Kprintf[m[K’?
+   56 |       [01;31m[Kprint[m[K(right_obstacle);
+      |       [01;31m[K^~~~~[m[K
+      |       [32m[Kprintf[m[K
+make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

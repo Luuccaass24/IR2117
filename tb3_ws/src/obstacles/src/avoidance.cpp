@@ -28,6 +28,7 @@ void callback_left(const example_interfaces::msg::Bool::SharedPtr msg){
 
 void callback_right(const example_interfaces::msg::Bool::SharedPtr msg){
     	right_obstacle = msg->data;
+    	
 }
 
 int main(int argc, char * argv[]){
@@ -43,37 +44,40 @@ int main(int argc, char * argv[]){
 	
 	
 	while (rclcpp::ok()){
-        switch(state) {
-            case S1:
-                if(front_obstacle && (right_obstacle || left_obstacle)){
-                    state=S2;
-                }
-                break;
-            case S2:
-                if (front_obstacle && left_obstacle){
-                    state=S3;
-                }else if (front_obstacle && right_obstacle){
-                    state=S1;
-                }
-                break;
-            case S3:
-                state = S1;
-        }
+	   std::cout<<front_obstacle<<std::endl;
+	   switch(state) {
+	   case S1:
+	        if(front_obstacle){
+	            state=S2;
+	        }
+	        break;
+	   case S2:
+		if (right_obstacle & front_obstacle){
+		    state=S3;
+		}else if (!front_obstacle){
+		    state=S1;
+		}
+		break;
+	    case S3:
+	    	if (!front_obstacle){
+	        	state = S1;
+	        }
+	    }
         if (state == S1){
-            message.linear.x = 0.2;
+            message.linear.x = 0.1;
             message.angular.z = 0;
             publisher->publish(message);
             rclcpp::spin_some(node);
             loop_rate.sleep();
         }else if (state == S2){
             message.linear.x = 0;
-            message.angular.z = 0.2;
+            message.angular.z = -0.1;
             publisher->publish(message);
             rclcpp::spin_some(node);
             loop_rate.sleep();
         }else if (state == S3){
             message.linear.x = 0;
-            message.angular.z = -0.2;
+            message.angular.z = 0.1;
             publisher->publish(message);
             rclcpp::spin_some(node);
             loop_rate.sleep();

@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp
+iostream
+-
+string.h
+-
 chrono
 -
 rclcpp/rclcpp.hpp
