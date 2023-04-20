@@ -1,0 +1,40 @@
+[0.031s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
+[0.095s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.118s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.312s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.361s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.468s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.515s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.517s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.636s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.723s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.810s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.899s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.905s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.905s] -- Configured cppcheck include dirs: 
+[0.905s] -- Configured cppcheck exclude dirs and/or files: 
+[0.910s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.910s] -- Configured cpplint exclude dirs and/or files: 
+[0.911s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.912s] -- Added test 'lint_cmake' to check CMake code style
+[0.913s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.916s] -- Added test 'uncrustify' to check C / C++ code style
+[0.916s] -- Configured uncrustify additional arguments: 
+[0.917s] -- Added test 'xmllint' to check XML markup files
+[0.926s] -- Configuring done
+[1.030s] -- Generating done
+[1.040s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles
+[1.138s] [35m[1mScanning dependencies of target avoidance[0m
+[1.139s] [35m[1mScanning dependencies of target detector[0m
+[1.313s] [ 25%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[1.316s] [ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[50.887s] make[2]: *** Se borra el archivo 'CMakeFiles/detector.dir/src/detector.cpp.o'
+[50.888s] make[2]: *** [CMakeFiles/detector.dir/build.make:63: CMakeFiles/detector.dir/src/detector.cpp.o] Interrupción
+[50.888s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[50.888s] make[2]: *** Se espera a que terminen otras tareas....
+[50.888s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[50.888s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[50.888s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/detector.dir/all] Interrupción
+[50.889s] make: *** [Makefile:141: all] Interrupción
+[51.063s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6

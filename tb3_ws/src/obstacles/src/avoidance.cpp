@@ -44,7 +44,7 @@ int main(int argc, char * argv[]){
 	
 	
 	while (rclcpp::ok()){
-	   std::cout<<front_obstacle<<std::endl;
+	   std::cout<<left_obstacle<<right_obstacle<<std::endl;
 	   switch(state) {
 	   case S1:
 	        if(front_obstacle){
@@ -66,24 +66,18 @@ int main(int argc, char * argv[]){
         if (state == S1){
             message.linear.x = 0.1;
             message.angular.z = 0;
-            publisher->publish(message);
-            rclcpp::spin_some(node);
-            loop_rate.sleep();
         }else if (state == S2){
             message.linear.x = 0;
             message.angular.z = -0.1;
-            publisher->publish(message);
-            rclcpp::spin_some(node);
-            loop_rate.sleep();
+
         }else if (state == S3){
             message.linear.x = 0;
             message.angular.z = 0.1;
-            publisher->publish(message);
-            rclcpp::spin_some(node);
-            loop_rate.sleep();
-        }
-        
 	}
+	publisher->publish(message);
+	rclcpp::spin_some(node);
+	loop_rate.sleep();
+      }
 	rclcpp::shutdown();
 	return 0;
 }
