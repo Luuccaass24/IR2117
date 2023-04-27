@@ -30,7 +30,7 @@ int main(int argc, char * argv[]){
         RCLCPP_INFO(rclcpp::get_logger("rclcpp"),
                     "service not available, waiting again...");
         }
-        std::vector<std::vector<int>> turtle_colors = {
+        std::vector<std::vector<int>> colors = {
         	{0, 0, 255},
         	{0, 0, 0},
         	{255, 0, 0},
@@ -40,9 +40,9 @@ int main(int argc, char * argv[]){
         
         auto pen = std::make_shared<turtlesim::srv::SetPen::Request>();
         pen->off = 0;
-        pen->r = colores[i][0];
-        pen->g = colores[i][0];
-        pen->b = colores[i][0];
+        pen->r = colors[i][0];
+        pen->g = colors[i][0];
+        pen->b = colors[i][0];
         pen->width = 2;
         
         auto dibujar = setpen->async_send_request(pen);
