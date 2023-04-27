@@ -1,0 +1,32 @@
+[0.034s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6
+[0.065s] [35m[1mScanning dependencies of target rings[0m
+[0.078s] [ 33%] Built target client
+[0.082s] [ 66%] [32mBuilding CXX object CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o[0m
+[0.082s] [ 83%] Built target server
+[2.319s] [100%] [32m[1mLinking CXX executable rings[0m
+[2.603s] [100%] Built target rings
+[2.617s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6
+[2.643s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli
+[2.652s] -- Install configuration: ""
+[2.652s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/package_run_dependencies/cpp_srvcli
+[2.652s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/parent_prefix_path/cpp_srvcli
+[2.653s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.sh
+[2.653s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.dsv
+[2.654s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.sh
+[2.654s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.dsv
+[2.654s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.bash
+[2.654s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.sh
+[2.655s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.zsh
+[2.655s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.dsv
+[2.656s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv
+[2.656s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/packages/cpp_srvcli
+[2.657s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig.cmake
+[2.657s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig-version.cmake
+[2.658s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.xml
+[2.658s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/server
+[2.666s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/server" to ""
+[2.666s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/client
+[2.674s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/client" to ""
+[2.674s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/rings
+[2.684s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/rings" to ""
+[2.691s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli

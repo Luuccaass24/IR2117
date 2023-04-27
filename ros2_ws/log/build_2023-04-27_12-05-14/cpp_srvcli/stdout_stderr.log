@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target rings[0m
+[ 33%] Built target client
+[ 66%] [32mBuilding CXX object CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o[0m
+[ 83%] Built target server
+[100%] [32m[1mLinking CXX executable rings[0m
+[100%] Built target rings
+-- Install configuration: ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/package_run_dependencies/cpp_srvcli
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/parent_prefix_path/cpp_srvcli
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.bash
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.zsh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/packages/cpp_srvcli
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig.cmake
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig-version.cmake
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.xml
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/server
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/server" to ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/client
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/client" to ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/rings
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/rings" to ""

@@ -1,0 +1,154 @@
+para configurar spawn
+
+#include "rclcpp/rclcpp.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "turtlesim/srv/spawn.hpp"
+#include "turtlesim/srv/set_pen.hpp"
+
+int main(int argc, char **argv) {
+  // Inicializamos el nodo
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("my_node");
+
+  // Creamos el cliente para llamar al servicio spawn
+  auto spawn_client = node->create_client<turtlesim::srv::Spawn>("spawn");
+
+  // Esperamos a que el servidor del servicio esté disponible
+  while (!spawn_client->wait_for_service(std::chrono::seconds(1))) {
+    if (!rclcpp::ok()) {
+      RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
+      return 1;
+    }
+    RCLCPP_INFO(node->get_logger(), "Service not available, waiting again...");
+  }
+
+  // Creamos un vector de nombres para las tortugas
+  std::vector<std::string> turtle_names = {"turtle1", "turtle2", "turtle3"};
+
+  // Configuramos los parámetros del servicio set_pen para cada tortuga
+  std::vector<turtlesim::srv::SetPen::Request> setpen_requests;
+  for (const auto &turtle_name : turtle_names) {
+    turtlesim::srv::SetPen::Request setpen_request;
+    setpen_request.off = 0;
+    setpen_request.r = 255;
+    setpen_request.g = 0;
+    setpen_request.b = 0;
+    setpen_request.width = 2;
+    setpen_requests.push_back(setpen_request);
+  }
+
+  // Llamamos al servicio spawn para crear las tortugas
+  std::vector<std::shared_ptr<rclcpp::Client<turtlesim::srv::Spawn>>> spawn_clients;
+  for (const auto &turtle_name : turtle_names) {
+    auto spawn_client = node->create_client<turtlesim::srv::Spawn>("spawn");
+    auto spawn_request = std::make_shared<turtlesim::srv::Spawn::Request>();
+    spawn_request->name = turtle_name;
+    spawn_clients.push_back(spawn_client->async_send_request(spawn_request));
+  }
+
+  // Esperamos a que se hayan creado todas las tortugas
+  for (auto &spawn_client : spawn_clients) {
+    rclcpp::spin_until_future_complete(node, spawn_client);
+  }
+
+  // Creamos un vector de publishers para publicar al topic cmd_vel de cada tortuga
+  std::vector<rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr> cmdvel_publishers;
+  for (const auto &turtle_name : turtle_names) {
+    auto cmdvel_publisher = node->create_publisher<geometry_msgs::msg::Twist>(turtle_name + "/cmd_vel", 10);
+    cmdvel_publishers.push_back(cmdvel_publisher);
+  }
+
+  // Configuramos los parámetros del servicio set_pen para cada tortuga
+  std::vector<std::shared_ptr<rclcpp::Client<turtlesim::srv::SetPen>>> setpen_clients;
+  for (size_t i = 0; i < turtle_names.size(); ++i) {
+    auto setpen_client = node->create_client<turtlesim::srv::SetPen>(turtle_names[i] + "/set_pen
+
+
+-- para configurar colores --
+
+// Configuramos los colores de las tortugas
+std::vector<std::array<uint8_t, 3>> turtle_colors = {
+  {255, 0, 0},   // Rojo
+  {0, 255, 0},   // Verde
+  {0, 0, 255},   // Azul
+  {255, 255, 0}, // Amarillo
+  {255, 0, 255}  // Magenta
+};
+
+// Configuramos los parámetros del servicio set_pen para cada tortuga
+std::vector<turtlesim::srv::SetPen::Request> setpen_requests;
+for (size_t i = 0; i < turtle_names.size(); i++) {
+  turtlesim::srv::SetPen::Request setpen_request;
+  setpen_request.off = 0;
+  setpen_request.r = turtle_colors[i][0];
+  setpen_request.g = turtle_colors[i][1];
+  setpen_request.b = turtle_colors[i][2];
+  setpen_request.width = 2;
+  setpen_requests.push_back(setpen_request);
+}
+
+
+-- cmdvel con set_pen --
+#include "rclcpp/rclcpp.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "turtlesim/srv/set_pen.hpp"
+
+int main(int argc, char **argv) {
+  // Inicializamos el nodo
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("my_node");
+
+  // Creamos el cliente para llamar al servicio set_pen
+  auto setpen_client = node->create_client<turtlesim::srv::SetPen>("set_pen");
+
+  // Esperamos a que el servidor del servicio esté disponible
+  while (!setpen_client->wait_for_service(std::chrono::seconds(1))) {
+    if (!rclcpp::ok()) {
+      RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
+      return 1;
+    }
+    RCLCPP_INFO(node->get_logger(), "Service not available, waiting again...");
+  }
+
+  // Publicamos al topic cmd_vel
+  auto cmdvel_publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+
+  // Configuramos los parámetros del servicio set_pen para pintar un círculo
+  auto setpen_request = std::make_shared<turtlesim::srv::SetPen::Request>();
+  setpen_request->off = 0;
+  setpen_request->r = 255;
+  setpen_request->g = 0;
+  setpen_request->b = 0;
+  setpen_request->width = 2;
+
+  // Llamamos al servicio set_pen para que configure los parámetros de pintado
+  auto setpen_future = setpen_client->async_send_request(setpen_request);
+
+  // Esperamos a que el servicio haya configurado los parámetros de pintado
+  rclcpp::spin_until_future_complete(node, setpen_future);
+
+  // Creamos el mensaje para publicar al topic cmd_vel
+  auto cmdvel_msg = std::make_shared<geometry_msgs::msg::Twist>();
+  cmdvel_msg->linear.x = 1.0;
+  cmdvel_msg->angular.z = 1.0;
+
+  // Publicamos el mensaje al topic cmd_vel
+  cmdvel_publisher->publish(cmdvel_msg);
+
+  // Esperamos a que se publique el mensaje
+  rclcpp::spin_some(node);
+
+  // Detenemos el robot después de que haya completado el círculo
+  cmdvel_msg->linear.x = 0.0;
+  cmdvel_msg->angular.z = 0.0;
+  cmdvel_publisher->publish(cmdvel_msg);
+
+  // Esperamos a que se publique el mensaje
+  rclcpp::spin_some(node);
+
+  // Cerramos el nodo
+  rclcpp::shutdown();
+  return 0;
+}
+
+

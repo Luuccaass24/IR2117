@@ -1,0 +1,91 @@
+[0.032s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6
+[0.079s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o[0m
+[0.079s] [ 50%] Built target client
+[0.079s] [ 83%] Built target server
+[1.034s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.035s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:52:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+[1.035s]    14 |  auto move = node->create_publisher<std_msgs::msg::[01;31m[KTwist[m[K>("/turtle1/cmd_vel",10);
+[1.035s]       |                                                    [01;31m[K^~~~~[m[K
+[1.035s] In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/twist.hpp:7[m[K,
+[1.035s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:4[m[K:
+[1.035s] [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+[1.035s]   133 | using [01;36m[KTwist[m[K =
+[1.035s]       |       [01;36m[K^~~~~[m[K
+[1.035s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:52:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+[1.035s]    14 |  auto move = node->create_publisher<std_msgs::msg::[01;31m[KTwist[m[K>("/turtle1/cmd_vel",10);
+[1.035s]       |                                                    [01;31m[K^~~~~[m[K
+[1.036s] In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/twist.hpp:7[m[K,
+[1.036s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:4[m[K:
+[1.036s] [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+[1.036s]   133 | using [01;36m[KTwist[m[K =
+[1.036s]       |       [01;36m[K^~~~~[m[K
+[1.036s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [17], int)[m[K’
+[1.036s]    14 | >create_publisher<std_msgs::msg::Twist>("/turtle1/cmd_vel",10[01;31m[K)[m[K;
+[1.036s]       |                                                              [01;31m[K^[m[K
+[1.037s] 
+[1.037s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.037s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.037s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.037s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:1[m[K:
+[1.037s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.037s]   184 |   [01;36m[Kcreate_publisher[m[K(
+[1.037s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.037s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.037s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.037s]    14 | >create_publisher<std_msgs::msg::Twist>("/turtle1/cmd_vel",10[01;31m[K)[m[K;
+[1.037s]       |                                                              [01;31m[K^[m[K
+[1.037s] 
+[1.037s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:17:56:[m[K [01;31m[Kerror: [m[K‘[01m[KSpawn[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kturtlesim::srv::Spawn[m[K’?
+[1.037s]    17 |  auto teleport = node->create_publisher<std_msgs::msg::[01;31m[KSpawn[m[K>("/turtle1/cmd_vel",10);
+[1.037s]       |                                                        [01;31m[K^~~~~[m[K
+[1.037s] In file included from [01m[K/opt/ros/foxy/include/turtlesim/srv/spawn.hpp:7[m[K,
+[1.038s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:6[m[K:
+[1.038s] [01m[K/opt/ros/foxy/include/turtlesim/srv/detail/spawn__struct.hpp:292:8:[m[K [01;36m[Knote: [m[K‘[01m[Kturtlesim::srv::Spawn[m[K’ declared here
+[1.038s]   292 | struct [01;36m[KSpawn[m[K
+[1.038s]       |        [01;36m[K^~~~~[m[K
+[1.038s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:17:56:[m[K [01;31m[Kerror: [m[K‘[01m[KSpawn[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kturtlesim::srv::Spawn[m[K’?
+[1.038s]    17 |  auto teleport = node->create_publisher<std_msgs::msg::[01;31m[KSpawn[m[K>("/turtle1/cmd_vel",10);
+[1.038s]       |                                                        [01;31m[K^~~~~[m[K
+[1.038s] In file included from [01m[K/opt/ros/foxy/include/turtlesim/srv/spawn.hpp:7[m[K,
+[1.038s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:6[m[K:
+[1.038s] [01m[K/opt/ros/foxy/include/turtlesim/srv/detail/spawn__struct.hpp:292:8:[m[K [01;36m[Knote: [m[K‘[01m[Kturtlesim::srv::Spawn[m[K’ declared here
+[1.038s]   292 | struct [01;36m[KSpawn[m[K
+[1.038s]       |        [01;36m[K^~~~~[m[K
+[1.038s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:17:84:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [17], int)[m[K’
+[1.038s]    17 | >create_publisher<std_msgs::msg::Spawn>("/turtle1/cmd_vel",10[01;31m[K)[m[K;
+[1.038s]       |                                                              [01;31m[K^[m[K
+[1.038s] 
+[1.038s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.039s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.039s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:1[m[K:
+[1.039s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.039s]   184 |   [01;36m[Kcreate_publisher[m[K(
+[1.039s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.039s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.039s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:17:84:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.039s]    17 | >create_publisher<std_msgs::msg::Spawn>("/turtle1/cmd_vel",10[01;31m[K)[m[K;
+[1.039s]       |                                                              [01;31m[K^[m[K
+[1.039s] 
+[1.039s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:21:28:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kgeometry_msgs::msg::Twist message[m[K’
+[1.039s]    21 |  geometry_msgs::msg::Twist [01;31m[Kmessage[m[K;
+[1.039s]       |                            [01;31m[K^~~~~~~[m[K
+[1.039s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:15:24:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd_msgs::msg::String message[m[K’
+[1.039s]    15 |  std_msgs::msg::String [01;36m[Kmessage[m[K;
+[1.039s]       |                        [01;36m[K^~~~~~~[m[K
+[1.044s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:27:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing String = struct std_msgs::msg::String_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::String_<std::allocator<void> >[m[K’} has no member named ‘[01m[Klinear[m[K’
+[1.044s]    27 |   message.[01;31m[Klinear[m[K.x = 0.2;
+[1.044s]       |           [01;31m[K^~~~~~[m[K
+[1.044s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:28:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing String = struct std_msgs::msg::String_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::String_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kangular[m[K’
+[1.044s]    28 |              message.[01;31m[Kangular[m[K.z = 0.2;
+[1.044s]       |                      [01;31m[K^~~~~~~[m[K
+[1.044s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:18:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpublish_count[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.044s]    18 |  auto [01;35m[Kpublish_count[m[K=0;
+[1.044s]       |       [01;35m[K^~~~~~~~~~~~~[m[K
+[1.045s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:24:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksquare_length[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.045s]    24 |  double [01;35m[Ksquare_length[m[K = node->get_parameter("radius").get_parameter_value().get<double>();
+[1.045s]       |         [01;35m[K^~~~~~~~~~~~~[m[K
+[1.387s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o] Error 1
+[1.387s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings.dir/all] Error 2
+[1.388s] make: *** [Makefile:141: all] Error 2
+[1.390s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6

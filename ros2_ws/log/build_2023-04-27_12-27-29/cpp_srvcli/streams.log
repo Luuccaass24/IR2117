@@ -1,0 +1,13 @@
+[0.032s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6
+[0.063s] [35m[1mScanning dependencies of target rings[0m
+[0.076s] [ 33%] Built target server
+[0.076s] [ 66%] Built target client
+[0.086s] [ 83%] [32mBuilding CXX object CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o[0m
+[0.150s] [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kturtlesim/srv/Spawn.msg: No existe el archivo o el directorio
+[0.150s]     5 | #include [01;31m[K"turtlesim/srv/Spawn.msg"[m[K
+[0.151s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.151s] compilation terminated.
+[0.151s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o] Error 1
+[0.152s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings.dir/all] Error 2
+[0.157s] make: *** [Makefile:141: all] Error 2
+[0.185s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6

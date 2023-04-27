@@ -1,0 +1,52 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:52:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+   14 |  auto move = node->create_publisher<std_msgs::msg::[01;31m[KTwist[m[K>("/turtle1/cmd_vel",10);
+      |                                                    [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/twist.hpp:7[m[K,
+                 from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+  133 | using [01;36m[KTwist[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:52:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+   14 |  auto move = node->create_publisher<std_msgs::msg::[01;31m[KTwist[m[K>("/turtle1/cmd_vel",10);
+      |                                                    [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/twist.hpp:7[m[K,
+                 from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+  133 | using [01;36m[KTwist[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [17], int)[m[K’
+   14 | >create_publisher<std_msgs::msg::Twist>("/turtle1/cmd_vel",10[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  184 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:14:80:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 | >create_publisher<std_msgs::msg::Twist>("/turtle1/cmd_vel",10[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:24:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   24 |  while (![01;31m[Kclient[m[K->wait_for_service(1s)){
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:43:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolores[m[K’ was not declared in this scope; did you mean ‘[01m[Kclone[m[K’?
+   43 |         pen->r = [01;31m[Kcolores[m[K[i][0];
+      |                  [01;31m[K^~~~~~~[m[K
+      |                  [32m[Kclone[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:43:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   43 |         pen->r = colores[[01;31m[Ki[m[K][0];
+      |                          [01;31m[K^[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:49:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+   49 |         if (rclcpp::spin_until_future_complete(node, [01;31m[Kresult[m[K) == rclcpp::FutureReturnCode::SUCCESS){
+      |                                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:22:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksquare_length[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   22 |  double [01;35m[Ksquare_length[m[K = node->get_parameter("radius").get_parameter_value().get<double>();
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
