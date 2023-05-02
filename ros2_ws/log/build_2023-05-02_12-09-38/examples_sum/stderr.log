@@ -1,0 +1,4 @@
+make[2]: *** Se borra el archivo 'CMakeFiles/sum.dir/sum.cpp.o'
+make[2]: *** [CMakeFiles/sum.dir/build.make:63: CMakeFiles/sum.dir/sum.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sum.dir/all] Interrupción
+make: *** [Makefile:141: all] Interrupción

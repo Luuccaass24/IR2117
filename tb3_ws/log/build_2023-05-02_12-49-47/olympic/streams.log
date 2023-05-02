@@ -1,0 +1,78 @@
+[0.025s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic
+[0.127s] -- The C compiler identification is GNU 9.4.0
+[0.170s] -- The CXX compiler identification is GNU 9.4.0
+[0.175s] -- Check for working C compiler: /usr/bin/cc
+[0.229s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.231s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.298s] -- Detecting C compile features
+[0.298s] -- Detecting C compile features - done
+[0.302s] -- Check for working CXX compiler: /usr/bin/c++
+[0.363s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.364s] -- Detecting CXX compiler ABI info
+[0.430s] -- Detecting CXX compiler ABI info - done
+[0.440s] -- Detecting CXX compile features
+[0.441s] -- Detecting CXX compile features - done
+[0.444s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.464s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.464s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.629s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.664s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.674s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.729s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.753s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.856s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.857s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.858s] -- Looking for pthread.h
+[0.920s] -- Looking for pthread.h - found
+[0.920s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.995s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.995s] -- Looking for pthread_create in pthreads
+[1.086s] -- Looking for pthread_create in pthreads - not found
+[1.086s] -- Looking for pthread_create in pthread
+[1.152s] -- Looking for pthread_create in pthread - found
+[1.153s] -- Found Threads: TRUE  
+[1.259s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.284s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[1.366s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.420s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.421s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.421s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>
+[1.422s] -- Configured cppcheck exclude dirs and/or files: 
+[1.423s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.423s] -- Configured cpplint exclude dirs and/or files: 
+[1.424s] -- Added test 'lint_cmake' to check CMake code style
+[1.424s] -- Added test 'uncrustify' to check C / C++ code style
+[1.425s] -- Configured uncrustify additional arguments: 
+[1.425s] -- Added test 'xmllint' to check XML markup files
+[1.428s] -- Configuring done
+[1.437s] -- Generating done
+[1.439s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[1.447s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic
+[1.449s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[1.494s] [35m[1mScanning dependencies of target rings[0m
+[1.526s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[4.532s] [100%] [32m[1mLinking CXX executable rings[0m
+[4.940s] [100%] Built target rings
+[4.948s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[5.014s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[5.021s] -- Install configuration: ""
+[5.021s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+[5.036s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings" to ""
+[5.036s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
+[5.036s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
+[5.038s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh
+[5.038s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.dsv
+[5.038s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.sh
+[5.039s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.dsv
+[5.039s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.bash
+[5.040s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.sh
+[5.040s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.zsh
+[5.041s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.dsv
+[5.041s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.dsv
+[5.042s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/packages/olympic
+[5.042s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig.cmake
+[5.043s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig-version.cmake
+[5.043s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.xml
+[5.052s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic

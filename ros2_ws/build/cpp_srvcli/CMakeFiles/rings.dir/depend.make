@@ -290,9 +290,9 @@ CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/trace
 CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__builder.hpp
 CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__struct.hpp
 CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__traits.hpp
-CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/spawn__builder.hpp
-CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/spawn__struct.hpp
-CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/spawn__traits.hpp
+CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__builder.hpp
+CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__struct.hpp
+CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__traits.hpp
 CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/set_pen.hpp
-CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/spawn.hpp
+CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: /opt/ros/foxy/include/turtlesim/srv/teleport_absolute.hpp
 

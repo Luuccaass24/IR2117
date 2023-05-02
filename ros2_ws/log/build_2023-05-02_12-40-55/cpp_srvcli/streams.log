@@ -1,0 +1,15 @@
+[0.032s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6
+[0.063s] [35m[1mScanning dependencies of target rings[0m
+[0.076s] [ 33%] Built target server
+[0.076s] [ 66%] Built target client
+[0.085s] [ 83%] [32mBuilding CXX object CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o[0m
+[3.249s] [100%] [32m[1mLinking CXX executable rings[0m
+[3.630s] /usr/bin/ld: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: en la función `rclcpp::Client<turtlesim::srv::TeleportAbsolute>::Client(rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rcl_client_options_t&)':
+[3.630s] olympic_rings_client.cpp:(.text._ZN6rclcpp6ClientIN9turtlesim3srv16TeleportAbsoluteEEC2EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t[_ZN6rclcpp6ClientIN9turtlesim3srv16TeleportAbsoluteEEC5EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t]+0xc4): referencia a `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<turtlesim::srv::TeleportAbsolute>()' sin definir
+[3.630s] /usr/bin/ld: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: en la función `rclcpp::Client<turtlesim::srv::SetPen>::Client(rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rcl_client_options_t&)':
+[3.630s] olympic_rings_client.cpp:(.text._ZN6rclcpp6ClientIN9turtlesim3srv6SetPenEEC2EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t[_ZN6rclcpp6ClientIN9turtlesim3srv6SetPenEEC5EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t]+0xc4): referencia a `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<turtlesim::srv::SetPen>()' sin definir
+[3.630s] collect2: error: ld returned 1 exit status
+[3.631s] make[2]: *** [CMakeFiles/rings.dir/build.make:151: rings] Error 1
+[3.631s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings.dir/all] Error 2
+[3.632s] make: *** [Makefile:141: all] Error 2
+[3.634s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j6 -l6

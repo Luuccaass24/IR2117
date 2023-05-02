@@ -1,0 +1,11 @@
+[ 33%] [32m[1mLinking CXX executable rings[0m
+[ 66%] Built target server
+[ 83%] Built target client
+/usr/bin/ld: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: en la función `rclcpp::Client<turtlesim::srv::TeleportAbsolute>::Client(rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rcl_client_options_t&)':
+olympic_rings_client.cpp:(.text._ZN6rclcpp6ClientIN9turtlesim3srv16TeleportAbsoluteEEC2EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t[_ZN6rclcpp6ClientIN9turtlesim3srv16TeleportAbsoluteEEC5EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t]+0xc4): referencia a `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<turtlesim::srv::TeleportAbsolute>()' sin definir
+/usr/bin/ld: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o: en la función `rclcpp::Client<turtlesim::srv::SetPen>::Client(rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<rclcpp::node_interfaces::NodeGraphInterface>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rcl_client_options_t&)':
+olympic_rings_client.cpp:(.text._ZN6rclcpp6ClientIN9turtlesim3srv6SetPenEEC2EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t[_ZN6rclcpp6ClientIN9turtlesim3srv6SetPenEEC5EPNS_15node_interfaces17NodeBaseInterfaceESt10shared_ptrINS5_18NodeGraphInterfaceEERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER20rcl_client_options_t]+0xc4): referencia a `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<turtlesim::srv::SetPen>()' sin definir
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/rings.dir/build.make:151: rings] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

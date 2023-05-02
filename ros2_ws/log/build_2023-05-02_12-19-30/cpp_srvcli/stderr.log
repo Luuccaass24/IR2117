@@ -1,0 +1,49 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:15:82:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<geometry_msgs::msg::Twist>(const char [17])[m[K’
+   15 | reate_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel"[01;31m[K)[m[K;
+      |                                                              [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  184 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:15:82:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+   15 | reate_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel"[01;36m[K)[m[K;
+      |                                                              [01;36m[K^[m[K
+
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:28:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen_service[m[K’ was not declared in this scope
+   28 |      while (![01;31m[Kset_pen_service[m[K->wait_for_service(std::chrono::seconds(1))) {
+      |              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:51:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kradius[m[K’ was not declared in this scope
+   51 |    std::vector<std::vector<int>> pos = {{2.25,7.75}, {2.25+2*[01;31m[Kradius[m[K+0.5,7.75},{2.25+4*radius+1,7.75},{2.25+radius, 3.25}, {2.25+2*radius,3.25}};
+      |                                                              [01;31m[K^~~~~~[m[K
+
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:51:148:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{{2.25e+0, 7.75e+0}, {<expression error>, 7.75e+0}, {<expression error>, 7.75e+0}, {<expression error>, 3.25e+0}, {<expression error>, 3.25e+0}}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<std::vector<int> >[m[K’
+   51 | 25+4*radius+1,7.75},{2.25+radius, 3.25}, {2.25+2*radius,3.25}[01;31m[K}[m[K;
+      |                                                              [01;31m[K^[m[K
+      |                                                              [01;31m[K|[m[K
+      |                                                              [01;31m[K<brace-enclosed initializer list>[m[K
+
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:59:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kteleport_service[m[K’ was not declared in this scope
+   59 |          auto future_teleport = [01;31m[Kteleport_service[m[K->async_send_request(request);
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:61:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen_request[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetpen_request[m[K’?
+   61 |          [01;31m[Kset_pen_request[m[K->r = colors[l][0];
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |          [32m[Ksetpen_request[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:77:8:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto setpen_request[m[K’
+   77 |   auto [01;31m[Ksetpen_request[m[K = std::make_shared<turtlesim::srv::SetPen::Request>();
+      |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:60:15:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_ptr<turtlesim::srv::SetPen_Request_<std::allocator<void> > > setpen_request[m[K’
+   60 |          auto [01;36m[Ksetpen_request[m[K = std::make_shared<turtlesim::srv::SetPen::Request>();
+      |               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/olympic_rings_client.cpp:41:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksquare_length[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   41 |  double [01;35m[Ksquare_length[m[K = node->get_parameter("radius").get_parameter_value().get<double>();
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

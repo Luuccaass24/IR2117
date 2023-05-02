@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target rings[0m
+[ 33%] Built target server
+[ 66%] Built target client
+[ 83%] [32mBuilding CXX object CMakeFiles/rings.dir/src/olympic_rings_client.cpp.o[0m
+[100%] [32m[1mLinking CXX executable rings[0m
