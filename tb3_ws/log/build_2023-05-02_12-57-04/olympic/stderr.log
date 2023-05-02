@@ -1,0 +1,16 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:86:8:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto setpen_request[m[K’
+   86 |   auto [01;31m[Ksetpen_request[m[K = std::make_shared<turtlesim::srv::SetPen::Request>();
+      |        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:66:15:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_ptr<turtlesim::srv::SetPen_Request_<std::allocator<void> > > setpen_request[m[K’
+   66 |          auto [01;36m[Ksetpen_request[m[K = std::make_shared<turtlesim::srv::SetPen::Request>();
+      |               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:92:15:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto future_setpen[m[K’
+   92 |          auto [01;31m[Kfuture_setpen[m[K = setpen->async_send_request(setpen_request);
+      |               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:74:15:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_future<std::shared_ptr<turtlesim::srv::SetPen_Response_<std::allocator<void> > > > future_setpen[m[K’
+   74 |          auto [01;36m[Kfuture_setpen[m[K = setpen->async_send_request(setpen_request);
+      |               [01;36m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

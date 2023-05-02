@@ -14,7 +14,7 @@ int main(int argc, char * argv[]){
 	
 	auto move = node->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
 	
-	auto teleport = node->create_client<turtlesim::srv::TeleportAbsolute>("teleport_absolute");
+	auto teleport = node->create_client<turtlesim::srv::TeleportAbsolute>("/turtle1/teleport_absolute");
 	while (!teleport->wait_for_service(std::chrono::seconds(1))) {
     		if (!rclcpp::ok()) {
       			RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
@@ -24,7 +24,7 @@ int main(int argc, char * argv[]){
   	}
 
 	
-    	auto setpen= node->create_client<turtlesim::srv::SetPen>("set_pen");
+    	auto setpen= node->create_client<turtlesim::srv::SetPen>("/turtle1/set_pen");
     	while (!setpen->wait_for_service(std::chrono::seconds(1))) {
     		if (!rclcpp::ok()) {
       			RCLCPP_ERROR(node->get_logger(), "Interrupted while waiting for the service. Exiting.");
