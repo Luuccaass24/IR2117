@@ -68,7 +68,7 @@ int main(int argc, char * argv[]){
         	setpen_request->g = colors[l][1];
         	setpen_request->b = colors[l][2];
         	setpen_request->width = 2.0;
-        	setpen_request->off = 1;
+        	setpen_request->off = 0;
         	
         	auto future_teleport = teleport->async_send_request(request);
         	auto future_setpen = setpen->async_send_request(setpen_request);
