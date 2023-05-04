@@ -1,0 +1,7 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+make[2]: *** Se borra el archivo 'CMakeFiles/rings.dir/src/rings.cpp.o'
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Interrupción
+make[1]: *** wait: No hay ningún proceso hijo.  Alto.
+make[1]: *** Se espera a que terminen otras tareas....
+make[1]: *** wait: No hay ningún proceso hijo.  Alto.
+make: *** [Makefile:141: all] Error 2

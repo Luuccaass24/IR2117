@@ -1,0 +1,357 @@
+[0.000000] (-) TimerEvent: {}
+[0.000600] (obstacles) JobQueued: {'identifier': 'obstacles', 'dependencies': OrderedDict()}
+[0.000634] (olympic) JobQueued: {'identifier': 'olympic', 'dependencies': OrderedDict()}
+[0.000666] (robot_trajectory) JobQueued: {'identifier': 'robot_trajectory', 'dependencies': OrderedDict()}
+[0.000696] (obstacles) JobStarted: {'identifier': 'obstacles'}
+[0.015037] (olympic) JobStarted: {'identifier': 'olympic'}
+[0.023303] (robot_trajectory) JobStarted: {'identifier': 'robot_trajectory'}
+[0.033541] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'cmake'}
+[0.037799] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'build'}
+[0.040126] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles', '--', '-j6', '-l6'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'usuario'), ('SSH_AGENT_PID', '2793'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'ibus'), ('HOME', '/home/usuario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2611'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=22fd474def327854c974187864537c02'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'usuario'), ('JOURNAL_STREAM', '8:59783'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'usuario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/usuario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrob08.act.uji.es:@/tmp/.ICE-unix/2895,unix/labrob08.act.uji.es:/tmp/.ICE-unix/2895'), ('INVOCATION_ID', '4e0e100edbb4472ba51c12359eae5226'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/53a4f632_01fe_4660_9dc0_059b42b29da2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.122'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles'), ('LC_ALL', 'es_ES.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=22fd474def327854c974187864537c02'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.045274] (olympic) JobProgress: {'identifier': 'olympic', 'progress': 'cmake'}
+[0.051959] (olympic) JobProgress: {'identifier': 'olympic', 'progress': 'build'}
+[0.057676] (olympic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic', '--', '-j6', '-l6'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'usuario'), ('SSH_AGENT_PID', '2793'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'ibus'), ('HOME', '/home/usuario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2611'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=22fd474def327854c974187864537c02'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'usuario'), ('JOURNAL_STREAM', '8:59783'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'usuario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/usuario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrob08.act.uji.es:@/tmp/.ICE-unix/2895,unix/labrob08.act.uji.es:/tmp/.ICE-unix/2895'), ('INVOCATION_ID', '4e0e100edbb4472ba51c12359eae5226'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/53a4f632_01fe_4660_9dc0_059b42b29da2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.122'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic'), ('LC_ALL', 'es_ES.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=22fd474def327854c974187864537c02'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.061894] (robot_trajectory) JobProgress: {'identifier': 'robot_trajectory', 'progress': 'cmake'}
+[0.066691] (robot_trajectory) JobProgress: {'identifier': 'robot_trajectory', 'progress': 'build'}
+[0.068875] (robot_trajectory) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory', '--', '-j6', '-l6'], 'cwd': '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'usuario'), ('SSH_AGENT_PID', '2793'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'ibus'), ('HOME', '/home/usuario'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2611'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=22fd474def327854c974187864537c02'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'usuario'), ('JOURNAL_STREAM', '8:59783'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'usuario'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/usuario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/labrob08.act.uji.es:@/tmp/.ICE-unix/2895,unix/labrob08.act.uji.es:/tmp/.ICE-unix/2895'), ('INVOCATION_ID', '4e0e100edbb4472ba51c12359eae5226'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/53a4f632_01fe_4660_9dc0_059b42b29da2'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.122'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory'), ('LC_ALL', 'es_ES.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=22fd474def327854c974187864537c02'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099259] (-) TimerEvent: {}
+[0.199808] (-) TimerEvent: {}
+[0.247498] (obstacles) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.252499] (robot_trajectory) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.253104] (olympic) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.274368] (obstacles) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.274817] (robot_trajectory) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.276530] (olympic) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.299889] (-) TimerEvent: {}
+[0.400125] (-) TimerEvent: {}
+[0.474354] (robot_trajectory) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.474584] (obstacles) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.474685] (olympic) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.500264] (-) TimerEvent: {}
+[0.512587] (robot_trajectory) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.512757] (olympic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.512827] (obstacles) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.516261] (obstacles) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.516556] (olympic) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.516675] (robot_trajectory) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.600399] (-) TimerEvent: {}
+[0.622970] (obstacles) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.623147] (robot_trajectory) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.623220] (olympic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.666979] (robot_trajectory) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.667356] (obstacles) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.667452] (olympic) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.668635] (olympic) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.668855] (obstacles) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.668969] (robot_trajectory) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700510] (-) TimerEvent: {}
+[0.784199] (robot_trajectory) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.784496] (obstacles) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.784633] (olympic) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.800636] (-) TimerEvent: {}
+[0.811704] (olympic) StdoutLine: {'line': b'-- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)\n'}
+[0.812066] (robot_trajectory) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[0.868218] (robot_trajectory) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.879229] (obstacles) StderrLine: {'line': b'CMake Error at CMakeLists.txt:22 (find_package):\n'}
+[0.879431] (obstacles) StderrLine: {'line': b'  By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this\n'}
+[0.879493] (obstacles) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[0.879545] (obstacles) StderrLine: {'line': b'  "example_interfaces", but CMake did not find one.\n'}
+[0.879593] (obstacles) StderrLine: {'line': b'\n'}
+[0.879640] (obstacles) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[0.879687] (obstacles) StderrLine: {'line': b'  "example_interfaces" with any of the following names:\n'}
+[0.879733] (obstacles) StderrLine: {'line': b'\n'}
+[0.879778] (obstacles) StderrLine: {'line': b'    example_interfacesConfig.cmake\n'}
+[0.879823] (obstacles) StderrLine: {'line': b'    example_interfaces-config.cmake\n'}
+[0.879868] (obstacles) StderrLine: {'line': b'\n'}
+[0.879913] (obstacles) StderrLine: {'line': b'  Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or\n'}
+[0.880016] (obstacles) StderrLine: {'line': b'  set "example_interfaces_DIR" to a directory containing one of the above\n'}
+[0.880116] (obstacles) StderrLine: {'line': b'  files.  If "example_interfaces" provides a separate development package or\n'}
+[0.880403] (obstacles) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[0.880471] (obstacles) StderrLine: {'line': b'\n'}
+[0.880538] (obstacles) StderrLine: {'line': b'\n'}
+[0.880588] (obstacles) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.880644] (obstacles) StdoutLine: {'line': b'See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles/CMakeFiles/CMakeOutput.log".\n'}
+[0.880704] (obstacles) StdoutLine: {'line': b'See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles/CMakeFiles/CMakeError.log".\n'}
+[0.887279] (obstacles) StderrLine: {'line': b'make: *** [Makefile:310: cmake_check_build_system] Error 1\n'}
+[0.888953] (obstacles) CommandEnded: {'returncode': 2}
+[0.896149] (olympic) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.901408] (-) TimerEvent: {}
+[0.919007] (robot_trajectory) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.953600] (obstacles) JobEnded: {'identifier': 'obstacles', 'rc': 2}
+[1.001491] (-) TimerEvent: {}
+[1.062481] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.063676] (olympic) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.064471] (olympic) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.065417] (olympic) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>\n'}
+[1.065707] (olympic) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.066663] (olympic) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.066996] (olympic) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.068572] (olympic) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.070485] (olympic) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.070686] (olympic) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.071141] (olympic) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.071876] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.072186] (robot_trajectory) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.072270] (robot_trajectory) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.076332] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.076502] (robot_trajectory) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.077025] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.078366] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.079041] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.081582] (olympic) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.082931] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.083054] (robot_trajectory) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.083661] (robot_trajectory) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.094212] (robot_trajectory) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.101557] (-) TimerEvent: {}
+[1.158109] (olympic) StdoutLine: {'line': b'-- Generating done\n'}
+[1.170911] (olympic) StdoutLine: {'line': b'-- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic\n'}
+[1.201474] (robot_trajectory) StdoutLine: {'line': b'-- Generating done\n'}
+[1.201633] (-) TimerEvent: {}
+[1.212694] (robot_trajectory) StdoutLine: {'line': b'-- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/robot_trajectory\n'}
+[1.240350] (olympic) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rings\x1b[0m\n'}
+[1.301379] (robot_trajectory) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target square\x1b[0m\n'}
+[1.301655] (-) TimerEvent: {}
+[1.310694] (robot_trajectory) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target square_odom\x1b[0m\n'}
+[1.310847] (robot_trajectory) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target wandering\x1b[0m\n'}
+[1.388613] (olympic) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o\x1b[0m\n'}
+[1.401742] (-) TimerEvent: {}
+[1.409403] (robot_trajectory) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o\x1b[0m\n'}
+[1.463475] (robot_trajectory) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o\x1b[0m\n'}
+[1.466098] (robot_trajectory) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o\x1b[0m\n'}
+[1.501894] (-) TimerEvent: {}
+[1.602330] (-) TimerEvent: {}
+[1.702590] (-) TimerEvent: {}
+[1.802843] (-) TimerEvent: {}
+[1.903127] (-) TimerEvent: {}
+[2.003423] (-) TimerEvent: {}
+[2.103717] (-) TimerEvent: {}
+[2.227384] (-) TimerEvent: {}
+[2.327684] (-) TimerEvent: {}
+[2.427978] (-) TimerEvent: {}
+[2.528279] (-) TimerEvent: {}
+[2.628580] (-) TimerEvent: {}
+[2.728879] (-) TimerEvent: {}
+[2.829186] (-) TimerEvent: {}
+[2.929483] (-) TimerEvent: {}
+[3.029773] (-) TimerEvent: {}
+[3.130070] (-) TimerEvent: {}
+[3.230363] (-) TimerEvent: {}
+[3.330745] (-) TimerEvent: {}
+[3.431026] (-) TimerEvent: {}
+[3.531306] (-) TimerEvent: {}
+[3.631585] (-) TimerEvent: {}
+[3.731856] (-) TimerEvent: {}
+[3.832165] (-) TimerEvent: {}
+[3.932458] (-) TimerEvent: {}
+[4.032747] (-) TimerEvent: {}
+[4.133025] (-) TimerEvent: {}
+[4.233302] (-) TimerEvent: {}
+[4.333577] (-) TimerEvent: {}
+[4.433843] (-) TimerEvent: {}
+[4.534101] (-) TimerEvent: {}
+[4.634405] (-) TimerEvent: {}
+[4.734672] (-) TimerEvent: {}
+[4.834931] (-) TimerEvent: {}
+[4.935220] (-) TimerEvent: {}
+[5.035493] (-) TimerEvent: {}
+[5.135761] (-) TimerEvent: {}
+[5.236025] (-) TimerEvent: {}
+[5.336288] (-) TimerEvent: {}
+[5.436579] (-) TimerEvent: {}
+[5.536853] (-) TimerEvent: {}
+[5.637367] (-) TimerEvent: {}
+[5.737696] (-) TimerEvent: {}
+[5.837985] (-) TimerEvent: {}
+[5.938491] (-) TimerEvent: {}
+[6.038784] (-) TimerEvent: {}
+[6.139070] (-) TimerEvent: {}
+[6.239608] (-) TimerEvent: {}
+[6.339955] (-) TimerEvent: {}
+[6.440409] (-) TimerEvent: {}
+[6.540860] (-) TimerEvent: {}
+[6.641251] (-) TimerEvent: {}
+[6.741535] (-) TimerEvent: {}
+[6.841827] (-) TimerEvent: {}
+[6.942183] (-) TimerEvent: {}
+[7.042514] (-) TimerEvent: {}
+[7.142821] (-) TimerEvent: {}
+[7.243124] (-) TimerEvent: {}
+[7.343429] (-) TimerEvent: {}
+[7.443776] (-) TimerEvent: {}
+[7.544224] (-) TimerEvent: {}
+[7.644770] (-) TimerEvent: {}
+[7.745151] (-) TimerEvent: {}
+[7.845460] (-) TimerEvent: {}
+[7.945758] (-) TimerEvent: {}
+[8.046108] (-) TimerEvent: {}
+[8.146491] (-) TimerEvent: {}
+[8.246780] (-) TimerEvent: {}
+[8.347174] (-) TimerEvent: {}
+[8.447573] (-) TimerEvent: {}
+[8.547898] (-) TimerEvent: {}
+[8.648290] (-) TimerEvent: {}
+[8.748589] (-) TimerEvent: {}
+[8.848871] (-) TimerEvent: {}
+[8.949230] (-) TimerEvent: {}
+[9.049645] (-) TimerEvent: {}
+[9.150051] (-) TimerEvent: {}
+[9.250358] (-) TimerEvent: {}
+[9.350660] (-) TimerEvent: {}
+[9.450949] (-) TimerEvent: {}
+[9.551264] (-) TimerEvent: {}
+[9.651553] (-) TimerEvent: {}
+[9.751959] (-) TimerEvent: {}
+[9.852376] (-) TimerEvent: {}
+[9.952732] (-) TimerEvent: {}
+[10.053042] (-) TimerEvent: {}
+[10.153468] (-) TimerEvent: {}
+[10.253832] (-) TimerEvent: {}
+[10.354126] (-) TimerEvent: {}
+[10.454462] (-) TimerEvent: {}
+[10.554835] (-) TimerEvent: {}
+[10.655128] (-) TimerEvent: {}
+[10.755422] (-) TimerEvent: {}
+[10.855723] (-) TimerEvent: {}
+[10.955999] (-) TimerEvent: {}
+[11.056319] (-) TimerEvent: {}
+[11.156700] (-) TimerEvent: {}
+[11.257048] (-) TimerEvent: {}
+[11.357472] (-) TimerEvent: {}
+[11.457821] (-) TimerEvent: {}
+[11.558131] (-) TimerEvent: {}
+[11.658570] (-) TimerEvent: {}
+[11.758873] (-) TimerEvent: {}
+[11.859272] (-) TimerEvent: {}
+[11.959626] (-) TimerEvent: {}
+[12.059935] (-) TimerEvent: {}
+[12.160246] (-) TimerEvent: {}
+[12.260550] (-) TimerEvent: {}
+[12.360854] (-) TimerEvent: {}
+[12.461211] (-) TimerEvent: {}
+[12.561594] (-) TimerEvent: {}
+[12.661865] (-) TimerEvent: {}
+[12.762185] (-) TimerEvent: {}
+[12.862588] (-) TimerEvent: {}
+[12.962927] (-) TimerEvent: {}
+[13.063276] (-) TimerEvent: {}
+[13.163529] (-) TimerEvent: {}
+[13.263825] (-) TimerEvent: {}
+[13.364189] (-) TimerEvent: {}
+[13.464629] (-) TimerEvent: {}
+[13.565080] (-) TimerEvent: {}
+[13.665487] (-) TimerEvent: {}
+[13.765842] (-) TimerEvent: {}
+[13.866240] (-) TimerEvent: {}
+[13.966655] (-) TimerEvent: {}
+[14.067007] (-) TimerEvent: {}
+[14.167301] (-) TimerEvent: {}
+[14.267625] (-) TimerEvent: {}
+[14.368008] (-) TimerEvent: {}
+[14.468310] (-) TimerEvent: {}
+[14.568587] (-) TimerEvent: {}
+[14.668875] (-) TimerEvent: {}
+[14.769176] (-) TimerEvent: {}
+[14.869417] (-) TimerEvent: {}
+[14.969730] (-) TimerEvent: {}
+[15.070110] (-) TimerEvent: {}
+[15.170388] (-) TimerEvent: {}
+[15.270663] (-) TimerEvent: {}
+[15.370963] (-) TimerEvent: {}
+[15.471311] (-) TimerEvent: {}
+[15.571755] (-) TimerEvent: {}
+[15.672311] (-) TimerEvent: {}
+[15.772731] (-) TimerEvent: {}
+[15.873316] (-) TimerEvent: {}
+[15.973644] (-) TimerEvent: {}
+[16.073888] (-) TimerEvent: {}
+[16.174190] (-) TimerEvent: {}
+[16.274547] (-) TimerEvent: {}
+[16.374879] (-) TimerEvent: {}
+[16.475171] (-) TimerEvent: {}
+[16.575473] (-) TimerEvent: {}
+[16.675733] (-) TimerEvent: {}
+[16.776037] (-) TimerEvent: {}
+[16.876339] (-) TimerEvent: {}
+[16.976644] (-) TimerEvent: {}
+[17.076956] (-) TimerEvent: {}
+[17.177257] (-) TimerEvent: {}
+[17.277562] (-) TimerEvent: {}
+[17.377902] (-) TimerEvent: {}
+[17.478378] (-) TimerEvent: {}
+[17.578767] (-) TimerEvent: {}
+[17.679110] (-) TimerEvent: {}
+[17.779546] (-) TimerEvent: {}
+[17.879927] (-) TimerEvent: {}
+[17.980224] (-) TimerEvent: {}
+[18.080551] (-) TimerEvent: {}
+[18.180941] (-) TimerEvent: {}
+[18.281253] (-) TimerEvent: {}
+[18.381600] (-) TimerEvent: {}
+[18.482004] (-) TimerEvent: {}
+[18.582301] (-) TimerEvent: {}
+[18.682631] (-) TimerEvent: {}
+[18.783020] (-) TimerEvent: {}
+[18.883300] (-) TimerEvent: {}
+[18.983650] (-) TimerEvent: {}
+[19.084049] (-) TimerEvent: {}
+[19.184486] (-) TimerEvent: {}
+[19.284886] (-) TimerEvent: {}
+[19.385260] (-) TimerEvent: {}
+[19.485824] (-) TimerEvent: {}
+[19.586243] (-) TimerEvent: {}
+[19.686580] (-) TimerEvent: {}
+[19.786904] (-) TimerEvent: {}
+[19.887207] (-) TimerEvent: {}
+[19.987482] (-) TimerEvent: {}
+[20.087775] (-) TimerEvent: {}
+[20.188079] (-) TimerEvent: {}
+[20.288390] (-) TimerEvent: {}
+[20.388666] (-) TimerEvent: {}
+[20.488968] (-) TimerEvent: {}
+[20.589521] (-) TimerEvent: {}
+[20.689855] (-) TimerEvent: {}
+[20.790150] (-) TimerEvent: {}
+[20.890488] (-) TimerEvent: {}
+[20.990832] (-) TimerEvent: {}
+[21.091130] (-) TimerEvent: {}
+[21.191423] (-) TimerEvent: {}
+[21.291726] (-) TimerEvent: {}
+[21.392061] (-) TimerEvent: {}
+[21.492397] (-) TimerEvent: {}
+[21.592698] (-) TimerEvent: {}
+[21.693002] (-) TimerEvent: {}
+[21.793319] (-) TimerEvent: {}
+[21.893704] (-) TimerEvent: {}
+[21.994016] (-) TimerEvent: {}
+[22.094381] (-) TimerEvent: {}
+[22.194782] (-) TimerEvent: {}
+[22.295141] (-) TimerEvent: {}
+[22.395457] (-) TimerEvent: {}
+[22.495751] (-) TimerEvent: {}
+[22.596042] (-) TimerEvent: {}
+[22.696332] (-) TimerEvent: {}
+[22.796612] (-) TimerEvent: {}
+[22.896901] (-) TimerEvent: {}
+[29.289612] (robot_trajectory) StderrLine: {'line': b"make[2]: *** Se borra el archivo 'CMakeFiles/square_odom.dir/src/square_odom.cpp.o'\n"}
+[29.290723] (-) TimerEvent: {}
+[29.290879] (robot_trajectory) StderrLine: {'line': b'make[2]: *** wait: No hay ning\xc3\xban proceso hijo.  Alto.\n'}
+[29.291201] (robot_trajectory) StderrLine: {'line': b'make[2]: *** Se espera a que terminen otras tareas....\n'}
+[29.291376] (robot_trajectory) StderrLine: {'line': b'make[2]: *** wait: No hay ning\xc3\xban proceso hijo.  Alto.\n'}
+[29.291515] (robot_trajectory) StderrLine: {'line': b'make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Interrupci\xc3\xb3n\n'}
+[29.291714] (robot_trajectory) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/wandering.dir/all] Interrupci\xc3\xb3n\n'}
+[29.291767] (robot_trajectory) StderrLine: {'line': b'make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Interrupci\xc3\xb3n\n'}
+[29.291817] (robot_trajectory) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/square_odom.dir/all] Interrupci\xc3\xb3n\n'}
+[29.291864] (robot_trajectory) StderrLine: {'line': b'make[1]: *** wait: No hay ning\xc3\xban proceso hijo.  Alto.\n'}
+[29.291910] (robot_trajectory) StderrLine: {'line': b'make[1]: *** Se espera a que terminen otras tareas....\n'}
+[29.291956] (robot_trajectory) StderrLine: {'line': b'make[1]: *** wait: No hay ning\xc3\xban proceso hijo.  Alto.\n'}
+[29.292001] (robot_trajectory) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[29.292047] (olympic) StderrLine: {'line': b'make[2]: *** wait: No hay ning\xc3\xban proceso hijo.  Alto.\n'}
+[29.292111] (olympic) StderrLine: {'line': b'make[2]: *** Se espera a que terminen otras tareas....\n'}
+[29.292157] (olympic) StderrLine: {'line': b'make[2]: *** wait: No hay ning\xc3\xban proceso hijo.  Alto.\n'}
+[29.292203] (olympic) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2\n'}
+[29.292248] (olympic) StderrLine: {'line': b'make: *** [Makefile:141: all] Interrupci\xc3\xb3n\n'}
+[29.292294] (robot_trajectory) JobEnded: {'identifier': 'robot_trajectory', 'rc': 'SIGINT'}
+[29.507973] (-) TimerEvent: {}
+[29.508131] (olympic) JobEnded: {'identifier': 'olympic', 'rc': 'SIGINT'}
+[29.515013] (-) EventReactorShutdown: {}

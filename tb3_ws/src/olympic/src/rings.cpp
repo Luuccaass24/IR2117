@@ -45,25 +45,31 @@ int main(int argc, char * argv[]){
         	{0, 0, 255},
         	{0, 0, 0},
         	{255, 0, 0},
-        	{127, 127, 0},
+        	{255, 255, 0},
         	{0, 255, 0}
         };
         std::vector<std::vector<double>> pos = {
         {2.25,7.75}, 
-        {2.25+2*radius+0.5,7.75},
-        {2.25+4*radius+1,7.75},
-        {2.25+radius, 3.25},
-        {2.25+2*radius,3.25}
+        {2.25+2*radius+0.1,7.75},
+        {2.25+4*radius+0.2,7.75},
+        {2.0+radius+0.3, 6.5},
+        {2.25+2*radius+1.1,6.5}
         };
         
         for (int l =0;l<5;l++){
+        	auto setpen_request = std::make_shared<turtlesim::srv::SetPen::Request>();
+        	setpen_request->r = colors[l][0];
+        	setpen_request->g = colors[l][1];
+        	setpen_request->b = colors[l][2];
+        	setpen_request->width = 2.0;
+        	setpen_request->off = 1;
+        	auto future_setpen = setpen->async_send_request(setpen_request);
         
         	auto request = std::make_shared<turtlesim::srv::TeleportAbsolute::Request>();
         	request->x = pos[l][0];
         	request->y = pos[l][1];
         	request->theta = 0.0;
         	
-        	auto setpen_request = std::make_shared<turtlesim::srv::SetPen::Request>();
         	setpen_request->r = colors[l][0];
         	setpen_request->g = colors[l][1];
         	setpen_request->b = colors[l][2];
@@ -71,16 +77,17 @@ int main(int argc, char * argv[]){
         	setpen_request->off = 0;
         	
         	auto future_teleport = teleport->async_send_request(request);
-        	auto future_setpen = setpen->async_send_request(setpen_request);
+        	future_setpen = setpen->async_send_request(setpen_request);
 
        
-	    	int i=0,n=2*M_PI/(0.01 * 0.2);
+	    	int i=0,n=(2*M_PI)/(0.01 * 0.5);
 		while(rclcpp::ok() && (i<n)){
-			message.linear.x = 0.2;
-		    	message.angular.z = 0.2;
+			message.linear.x = 0.5;
+		    	message.angular.z = 0.5;
 			move->publish(message);
 			rclcpp::spin_some(node);
 			loop_rate.sleep();
+			i++;
 		}
 		
         	setpen_request->r = colors[l][0];

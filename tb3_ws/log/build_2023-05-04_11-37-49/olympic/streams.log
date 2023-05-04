@@ -1,0 +1,9 @@
+[0.052s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.217s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[35.946s] make[2]: *** Se borra el archivo 'CMakeFiles/rings.dir/src/rings.cpp.o'
+[35.946s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Interrupción
+[35.946s] make[1]: *** wait: No hay ningún proceso hijo.  Alto.
+[35.946s] make[1]: *** Se espera a que terminen otras tareas....
+[35.946s] make[1]: *** wait: No hay ningún proceso hijo.  Alto.
+[35.947s] make: *** [Makefile:141: all] Error 2
+[35.986s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
