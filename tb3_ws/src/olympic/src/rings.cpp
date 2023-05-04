@@ -42,18 +42,19 @@ int main(int argc, char * argv[]){
 	
         
         std::vector<std::vector<int>> colors = {
-        	{0, 0, 255},
         	{0, 0, 0},
+        	{0, 0, 255},
         	{255, 0, 0},
         	{255, 255, 0},
         	{0, 255, 0}
         };
+        double inicio = 5.5;
         std::vector<std::vector<double>> pos = {
-        {2.25,7.75}, 
-        {2.25+2*radius+0.1,7.75},
-        {2.25+4*radius+0.2,7.75},
-        {2.0+radius+0.3, 6.5},
-        {2.25+2*radius+1.1,6.5}
+        {inicio,inicio + radius/2}, 
+        {inicio - 2*radius *1.1,inicio + radius/2},
+        {inicio+radius*2*1.1,inicio + radius/2},
+        {inicio - radius*1.1, inicio - radius/2},
+        {inicio+radius*1.1,inicio - radius/2}
         };
         
         for (int l =0;l<5;l++){
@@ -82,7 +83,7 @@ int main(int argc, char * argv[]){
        
 	    	int i=0,n=(2*M_PI)/(0.01 * 0.5);
 		while(rclcpp::ok() && (i<n)){
-			message.linear.x = 0.5;
+			message.linear.x = radius * 0.5;
 		    	message.angular.z = 0.5;
 			move->publish(message);
 			rclcpp::spin_some(node);
