@@ -1,0 +1,20 @@
+[0.036s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics -- -j6 -l6
+[0.053s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.067s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.239s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.274s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.274s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.364s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.398s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.399s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.546s] -- Configuring done
+[0.560s] -- Generating done
+[0.562s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/examples_topics
+[0.584s] [35m[1mScanning dependencies of target publisher[0m
+[0.590s] [35m[1mScanning dependencies of target subscriber[0m
+[0.605s] [ 25%] [32mBuilding CXX object CMakeFiles/publisher.dir/publisher.cpp.o[0m
+[0.617s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/subscriber.cpp.o[0m
+[2.849s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[3.059s] [ 75%] Built target publisher
+[4.420s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[4.808s] [100%] Built target subscriber

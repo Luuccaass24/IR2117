@@ -1,0 +1,8 @@
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No existe el archivo o el directorio
+    1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/parallel.dir/build.make:63: CMakeFiles/parallel.dir/src/parallel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/parallel.dir/all] Error 2
+make[1]: *** Se espera a que terminen otras tareas....
+make: *** [Makefile:141: all] Error 2

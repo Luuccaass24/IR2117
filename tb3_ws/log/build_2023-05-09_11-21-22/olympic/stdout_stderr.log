@@ -1,0 +1,47 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[35m[1mScanning dependencies of target parallel[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel.cpp.o[0m
+[ 75%] Built target rings
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:53:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   53 |         [01;31m[Kstd[m[K::vector<std::vector<int>> colors = {
+      |         [01;31m[K^~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:72:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+   72 |             [01;31m[Krequest[m[K->x = pos[l][0];
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:76:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   76 |             auto spawn_future = [01;31m[Kclient[m[K->async_send_request(spawn_request);
+      |                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:79:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolors[m[K’ was not declared in this scope
+   79 |          setpen_request->r = [01;31m[Kcolors[m[K[l][0];
+      |                              [01;31m[K^~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:84:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen_request[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetpen_request[m[K’?
+   84 |             [01;31m[Kset_pen_request[m[K->turtle_name = names[l];
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |             [32m[Ksetpen_request[m[K
+make[2]: *** [CMakeFiles/parallel.dir/build.make:63: CMakeFiles/parallel.dir/src/parallel.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/parallel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

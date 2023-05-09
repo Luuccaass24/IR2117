@@ -1,0 +1,58 @@
+[0.022s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp -- -j6 -l6
+[0.046s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.067s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.231s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.251s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.346s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.404s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.429s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.431s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.526s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[0.533s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[0.763s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.804s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.869s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.870s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.870s] -- Configured cppcheck include dirs: 
+[0.870s] -- Configured cppcheck exclude dirs and/or files: 
+[0.870s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.870s] -- Configured cpplint exclude dirs and/or files: 
+[0.871s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.871s] -- Added test 'lint_cmake' to check CMake code style
+[0.871s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.871s] -- Added test 'uncrustify' to check C / C++ code style
+[0.871s] -- Configured uncrustify additional arguments: 
+[0.872s] -- Added test 'xmllint' to check XML markup files
+[0.875s] -- Configuring done
+[0.892s] -- Generating done
+[0.894s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp
+[0.918s] [35m[1mScanning dependencies of target turtle_tf2_listener[0m
+[0.934s] [ 50%] Built target turtle_tf2_broadcaster
+[0.953s] [ 75%] [32mBuilding CXX object CMakeFiles/turtle_tf2_listener.dir/src/turtle_tf2_listener.cpp.o[0m
+[3.458s] [100%] [32m[1mLinking CXX executable turtle_tf2_listener[0m
+[3.704s] [100%] Built target turtle_tf2_listener
+[3.714s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp -- -j6 -l6
+[3.742s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp
+[3.750s] -- Install configuration: ""
+[3.753s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/lib/learning_tf2_cpp/turtle_tf2_broadcaster
+[3.757s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/lib/learning_tf2_cpp/turtle_tf2_listener
+[3.767s] -- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/lib/learning_tf2_cpp/turtle_tf2_listener" to ""
+[3.767s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/launch
+[3.767s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/launch/turtle_tf2_demo.launch.py
+[3.767s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/ament_index/resource_index/package_run_dependencies/learning_tf2_cpp
+[3.767s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/ament_index/resource_index/parent_prefix_path/learning_tf2_cpp
+[3.767s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/environment/ament_prefix_path.sh
+[3.767s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/environment/ament_prefix_path.dsv
+[3.768s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/environment/path.sh
+[3.768s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/environment/path.dsv
+[3.768s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/local_setup.bash
+[3.768s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/local_setup.sh
+[3.768s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/local_setup.zsh
+[3.768s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/local_setup.dsv
+[3.768s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/package.dsv
+[3.769s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/ament_index/resource_index/packages/learning_tf2_cpp
+[3.769s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/cmake/learning_tf2_cppConfig.cmake
+[3.769s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/cmake/learning_tf2_cppConfig-version.cmake
+[3.769s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/install/learning_tf2_cpp/share/learning_tf2_cpp/package.xml
+[3.771s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/ros2_ws/build/learning_tf2_cpp

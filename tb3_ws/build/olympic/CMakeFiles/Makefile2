@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/parallel.dir/all
 all: CMakeFiles/rings.dir/all
 
 .PHONY : all
@@ -63,11 +64,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/parallel.dir/clean
 clean: CMakeFiles/rings.dir/clean
 clean: CMakeFiles/olympic_uninstall.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/parallel.dir
+
+# All Build rule for target.
+CMakeFiles/parallel.dir/all:
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/depend
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles --progress-num=1,2 "Built target parallel"
+.PHONY : CMakeFiles/parallel.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/parallel.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/parallel.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles 0
+.PHONY : CMakeFiles/parallel.dir/rule
+
+# Convenience name for target.
+parallel: CMakeFiles/parallel.dir/rule
+
+.PHONY : parallel
+
+# clean rule for target.
+CMakeFiles/parallel.dir/clean:
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/clean
+.PHONY : CMakeFiles/parallel.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/rings.dir
@@ -76,7 +105,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/rings.dir/all:
 	$(MAKE) -f CMakeFiles/rings.dir/build.make CMakeFiles/rings.dir/depend
 	$(MAKE) -f CMakeFiles/rings.dir/build.make CMakeFiles/rings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles --progress-num=1,2 "Built target rings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles --progress-num=3,4 "Built target rings"
 .PHONY : CMakeFiles/rings.dir/all
 
 # Build rule for subdir invocation for target.

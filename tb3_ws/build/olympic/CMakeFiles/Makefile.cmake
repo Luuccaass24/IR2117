@@ -647,6 +647,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/parallel.dir/DependInfo.cmake"
   "CMakeFiles/rings.dir/DependInfo.cmake"
   "CMakeFiles/olympic_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/uninstall.dir/DependInfo.cmake"

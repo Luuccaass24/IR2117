@@ -1,0 +1,4 @@
+make[2]: *** Se borra el archivo 'CMakeFiles/rings.dir/src/rings.cpp.o'
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Interrupción
+make: *** [Makefile:141: all] Interrupción
