@@ -1,0 +1,6 @@
+make[2]: *** Se borra el archivo 'CMakeFiles/avoidance.dir/src/avoidance.cpp.o'
+make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Interrupción
+make[2]: *** [CMakeFiles/detector.dir/build.make:63: CMakeFiles/detector.dir/src/detector.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/detector.dir/all] Interrupción
+make: *** [Makefile:141: all] Interrupción

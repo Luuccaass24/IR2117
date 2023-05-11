@@ -1,0 +1,24 @@
+[0.044s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles': /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6
+[0.173s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.195s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.340s] Traceback (most recent call last):
+[0.340s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.340s]     from ament_package.templates import get_environment_hook_template_path
+[0.340s] ModuleNotFoundError: No module named 'ament_package'
+[0.365s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.366s]   execute_process(/usr/bin/python3
+[0.366s]   /opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.366s]   /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles/ament_cmake_package_templates/templates.cmake)
+[0.366s]   returned error code 1
+[0.366s] Call Stack (most recent call first):
+[0.366s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.366s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.366s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.366s]   CMakeLists.txt:19 (find_package)
+[0.366s] 
+[0.366s] 
+[0.367s] -- Configuring incomplete, errors occurred!
+[0.367s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles/CMakeFiles/CMakeOutput.log".
+[0.367s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles/CMakeFiles/CMakeError.log".
+[0.391s] make: *** [Makefile:310: cmake_check_build_system] Error 1
+[0.401s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/obstacles -- -j6 -l6

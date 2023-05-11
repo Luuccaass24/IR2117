@@ -168,17 +168,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named parallel
+# Target rules for targets named rings_action_client
 
 # Build rule for target.
-parallel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 parallel
-.PHONY : parallel
+rings_action_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rings_action_client
+.PHONY : rings_action_client
 
 # fast build rule for target.
-parallel/fast:
-	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/build
-.PHONY : parallel/fast
+rings_action_client/fast:
+	$(MAKE) -f CMakeFiles/rings_action_client.dir/build.make CMakeFiles/rings_action_client.dir/build
+.PHONY : rings_action_client/fast
+
+#=============================================================================
+# Target rules for targets named rings_action_server
+
+# Build rule for target.
+rings_action_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rings_action_server
+.PHONY : rings_action_server
+
+# fast build rule for target.
+rings_action_server/fast:
+	$(MAKE) -f CMakeFiles/rings_action_server.dir/build.make CMakeFiles/rings_action_server.dir/build
+.PHONY : rings_action_server/fast
 
 #=============================================================================
 # Target rules for targets named rings
@@ -219,33 +232,6 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/parallel.o: src/parallel.cpp.o
-
-.PHONY : src/parallel.o
-
-# target to build an object file
-src/parallel.cpp.o:
-	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/src/parallel.cpp.o
-.PHONY : src/parallel.cpp.o
-
-src/parallel.i: src/parallel.cpp.i
-
-.PHONY : src/parallel.i
-
-# target to preprocess a source file
-src/parallel.cpp.i:
-	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/src/parallel.cpp.i
-.PHONY : src/parallel.cpp.i
-
-src/parallel.s: src/parallel.cpp.s
-
-.PHONY : src/parallel.s
-
-# target to generate assembly for a file
-src/parallel.cpp.s:
-	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/src/parallel.cpp.s
-.PHONY : src/parallel.cpp.s
-
 src/rings.o: src/rings.cpp.o
 
 .PHONY : src/rings.o
@@ -273,6 +259,60 @@ src/rings.cpp.s:
 	$(MAKE) -f CMakeFiles/rings.dir/build.make CMakeFiles/rings.dir/src/rings.cpp.s
 .PHONY : src/rings.cpp.s
 
+src/rings_action_client.o: src/rings_action_client.cpp.o
+
+.PHONY : src/rings_action_client.o
+
+# target to build an object file
+src/rings_action_client.cpp.o:
+	$(MAKE) -f CMakeFiles/rings_action_client.dir/build.make CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o
+.PHONY : src/rings_action_client.cpp.o
+
+src/rings_action_client.i: src/rings_action_client.cpp.i
+
+.PHONY : src/rings_action_client.i
+
+# target to preprocess a source file
+src/rings_action_client.cpp.i:
+	$(MAKE) -f CMakeFiles/rings_action_client.dir/build.make CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.i
+.PHONY : src/rings_action_client.cpp.i
+
+src/rings_action_client.s: src/rings_action_client.cpp.s
+
+.PHONY : src/rings_action_client.s
+
+# target to generate assembly for a file
+src/rings_action_client.cpp.s:
+	$(MAKE) -f CMakeFiles/rings_action_client.dir/build.make CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.s
+.PHONY : src/rings_action_client.cpp.s
+
+src/rings_action_server.o: src/rings_action_server.cpp.o
+
+.PHONY : src/rings_action_server.o
+
+# target to build an object file
+src/rings_action_server.cpp.o:
+	$(MAKE) -f CMakeFiles/rings_action_server.dir/build.make CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o
+.PHONY : src/rings_action_server.cpp.o
+
+src/rings_action_server.i: src/rings_action_server.cpp.i
+
+.PHONY : src/rings_action_server.i
+
+# target to preprocess a source file
+src/rings_action_server.cpp.i:
+	$(MAKE) -f CMakeFiles/rings_action_server.dir/build.make CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.i
+.PHONY : src/rings_action_server.cpp.i
+
+src/rings_action_server.s: src/rings_action_server.cpp.s
+
+.PHONY : src/rings_action_server.s
+
+# target to generate assembly for a file
+src/rings_action_server.cpp.s:
+	$(MAKE) -f CMakeFiles/rings_action_server.dir/build.make CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.s
+.PHONY : src/rings_action_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,16 +326,20 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... parallel"
+	@echo "... rings_action_client"
+	@echo "... rings_action_server"
 	@echo "... rings"
 	@echo "... olympic_uninstall"
 	@echo "... uninstall"
-	@echo "... src/parallel.o"
-	@echo "... src/parallel.i"
-	@echo "... src/parallel.s"
 	@echo "... src/rings.o"
 	@echo "... src/rings.i"
 	@echo "... src/rings.s"
+	@echo "... src/rings_action_client.o"
+	@echo "... src/rings_action_client.i"
+	@echo "... src/rings_action_client.s"
+	@echo "... src/rings_action_server.o"
+	@echo "... src/rings_action_server.i"
+	@echo "... src/rings_action_server.s"
 .PHONY : help
 
 

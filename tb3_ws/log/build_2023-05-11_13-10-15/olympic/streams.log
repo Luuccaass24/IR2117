@@ -1,0 +1,25 @@
+[0.018s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.049s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.077s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.250s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.278s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.281s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.375s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.411s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.412s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.514s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.538s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.611s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.634s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.673s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.673s]   ament_target_dependencies() the passed package name 'olympic_interfaces'
+[0.674s]   was not found before
+[0.674s] Call Stack (most recent call first):
+[0.674s]   CMakeLists.txt:30 (ament_target_dependencies)
+[0.674s] 
+[0.674s] 
+[0.674s] -- Configuring incomplete, errors occurred!
+[0.674s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/CMakeOutput.log".
+[0.674s] See also "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/CMakeError.log".
+[0.684s] make: *** [Makefile:354: cmake_check_build_system] Error 1
+[0.686s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

@@ -1,0 +1,54 @@
+[0.017s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.043s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.071s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.245s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.270s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.272s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.367s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.402s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.403s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.505s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.529s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.603s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.631s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.686s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.754s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.754s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.755s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>
+[0.755s] -- Configured cppcheck exclude dirs and/or files: 
+[0.755s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.755s] -- Configured cpplint exclude dirs and/or files: 
+[0.755s] -- Added test 'lint_cmake' to check CMake code style
+[0.756s] -- Added test 'uncrustify' to check C / C++ code style
+[0.756s] -- Configured uncrustify additional arguments: 
+[0.756s] -- Added test 'xmllint' to check XML markup files
+[0.759s] -- Configuring done
+[0.760s] CMake Error at CMakeLists.txt:32 (add_executable):
+[0.760s]   Cannot find source file:
+[0.760s] 
+[0.760s]     src/rings_action_client.cpp
+[0.760s] 
+[0.760s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[0.760s]   .hpp .hxx .in .txx
+[0.760s] 
+[0.760s] 
+[0.760s] CMake Error at CMakeLists.txt:28 (add_executable):
+[0.760s]   Cannot find source file:
+[0.760s] 
+[0.761s]     src/rings_action_server.cpp
+[0.761s] 
+[0.761s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[0.761s]   .hpp .hxx .in .txx
+[0.761s] 
+[0.761s] 
+[0.761s] CMake Error at CMakeLists.txt:32 (add_executable):
+[0.761s]   No SOURCES given to target: rings_action_client
+[0.761s] 
+[0.761s] 
+[0.761s] CMake Error at CMakeLists.txt:28 (add_executable):
+[0.761s]   No SOURCES given to target: rings_action_server
+[0.761s] 
+[0.761s] 
+[0.761s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[0.769s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.770s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

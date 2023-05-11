@@ -2,6 +2,27 @@
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include "rings.hpp"
+#include "olympic_interfaces/action/rings.hpp"
+
+using Rings = 
+  olympic_interfaces::action::Rings;
+
+using GoalHandleRings =
+  rclcpp_action::ClientGoalHandle<Rings>;
+
+using namespace std::chrono_literals;
+
+rclcpp::Node::SharedPtr g_node = nullptr;
+
+void feedback_callback(GoalHandleRings::SharedPtr,
+  const std::shared_ptr<const Rings::Feedback> feedback)
+{
+  RCLCPP_INFO(
+    g_node->get_logger(),
+    "Next number in sequence received: %" PRId32,
+    feedback->partial_sequence.back());
+}
 
 int main(int argc, char ** argv)
 {
@@ -16,6 +37,9 @@ int main(int argc, char ** argv)
     return 1;
   }
   
+  auto goal_msg = Rings::Goal();
+  goal_msg.order = 10;
+
 
   RCLCPP_INFO(g_node->get_logger(), 
     "Sending goal");
@@ -35,9 +59,52 @@ int main(int argc, char ** argv)
     return 1;
   }
 
+  GoalHandleRings::SharedPtr goal_handle = 
+    goal_handle_future.get();
+  if (!goal_handle) {
+    RCLCPP_ERROR(g_node->get_logger(), 
+      "Goal was rejected by server");
+    return 1;
+  }
+  auto result_future = 
+    action_client->async_get_result(goal_handle);
+
+  RCLCPP_INFO(g_node->get_logger(), "Waiting for result");
+
+  return_code = rclcpp::spin_until_future_complete(g_node, 
+    result_future);
+
+  if (return_code != rclcpp::FutureReturnCode::SUCCESS)
+  {
+    RCLCPP_ERROR(g_node->get_logger(), 
+      "get result call failed :(");
+    return 1;
+  }
+  GoalHandleRings::WrappedResult wrapped_result = 
+    result_future.get();
+
+  switch (wrapped_result.code) {
+    case rclcpp_action::ResultCode::SUCCEEDED:
+      break;
+    case rclcpp_action::ResultCode::ABORTED:
+      RCLCPP_ERROR(g_node->get_logger(), "Goal was aborted");
+      return 1;
+    case rclcpp_action::ResultCode::CANCELED:
+      RCLCPP_ERROR(g_node->get_logger(), "Goal was canceled");
+      return 1;
+    default:
+      RCLCPP_ERROR(g_node->get_logger(), "Unknown result code");
+      return 1;
+  }
+  RCLCPP_INFO(g_node->get_logger(), "result received");
+  for (auto number : wrapped_result.result->sequence) {
+    RCLCPP_INFO(g_node->get_logger(), "%" PRId32, number);
+  }
+
   action_client.reset();
   g_node.reset();
   rclcpp::shutdown();
   return 0;
 }
+
 

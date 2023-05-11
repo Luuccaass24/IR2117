@@ -1,0 +1,24 @@
+[0.018s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.076s] [ 25%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel.cpp.o[0m
+[0.079s] [ 75%] Built target rings
+[1.073s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.073s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:53:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+[1.073s]    53 |         [01;31m[Kstd[m[K::vector<std::vector<int>> colors = {
+[1.073s]       |         [01;31m[K^~~[m[K
+[1.080s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:72:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+[1.080s]    72 |             [01;31m[Krequest[m[K->x = pos[l][0];
+[1.080s]       |             [01;31m[K^~~~~~~[m[K
+[1.081s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:76:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[1.081s]    76 |             auto spawn_future = [01;31m[Kclient[m[K->async_send_request(spawn_request);
+[1.081s]       |                                 [01;31m[K^~~~~~[m[K
+[1.085s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:79:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolors[m[K’ was not declared in this scope
+[1.085s]    79 |          setpen_request->r = [01;31m[Kcolors[m[K[l][0];
+[1.085s]       |                              [01;31m[K^~~~~~[m[K
+[1.086s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:84:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen_request[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetpen_request[m[K’?
+[1.086s]    84 |             [01;31m[Kset_pen_request[m[K->turtle_name = names[l];
+[1.086s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.086s]       |             [32m[Ksetpen_request[m[K
+[2.057s] make[2]: *** [CMakeFiles/parallel.dir/build.make:63: CMakeFiles/parallel.dir/src/parallel.cpp.o] Error 1
+[2.057s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/parallel.dir/all] Error 2
+[2.058s] make: *** [Makefile:141: all] Error 2
+[2.060s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

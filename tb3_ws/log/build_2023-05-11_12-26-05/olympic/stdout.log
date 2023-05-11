@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable rings[0m
+[ 75%] Built target rings

@@ -1,0 +1,54 @@
+[0.226s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.484s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.688s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.456s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.480s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.482s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.575s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.623s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.625s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.741s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.770s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[1.859s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.097s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.098s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.098s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>
+[2.098s] -- Configured cppcheck exclude dirs and/or files: 
+[2.098s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.098s] -- Configured cpplint exclude dirs and/or files: 
+[2.099s] -- Added test 'lint_cmake' to check CMake code style
+[2.099s] -- Added test 'uncrustify' to check C / C++ code style
+[2.099s] -- Configured uncrustify additional arguments: 
+[2.099s] -- Added test 'xmllint' to check XML markup files
+[2.155s] -- Configuring done
+[2.633s] -- Generating done
+[2.677s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[2.778s] [35m[1mScanning dependencies of target parallel[0m
+[2.815s] [35m[1mScanning dependencies of target rings[0m
+[2.994s] [ 25%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[2.995s] [ 50%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel.cpp.o[0m
+[4.906s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.907s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:53:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+[4.907s]    53 |         [01;31m[Kstd[m[K::vector<std::vector<int>> colors = {
+[4.907s]       |         [01;31m[K^~~[m[K
+[4.908s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:72:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krequest[m[K’ was not declared in this scope
+[4.908s]    72 |             [01;31m[Krequest[m[K->x = pos[l][0];
+[4.908s]       |             [01;31m[K^~~~~~~[m[K
+[4.909s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:76:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[4.909s]    76 |             auto spawn_future = [01;31m[Kclient[m[K->async_send_request(spawn_request);
+[4.910s]       |                                 [01;31m[K^~~~~~[m[K
+[4.918s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:79:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolors[m[K’ was not declared in this scope
+[4.919s]    79 |          setpen_request->r = [01;31m[Kcolors[m[K[l][0];
+[4.919s]       |                              [01;31m[K^~~~~~[m[K
+[4.920s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/parallel.cpp:84:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen_request[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetpen_request[m[K’?
+[4.920s]    84 |             [01;31m[Kset_pen_request[m[K->turtle_name = names[l];
+[4.920s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.920s]       |             [32m[Ksetpen_request[m[K
+[6.606s] make[2]: *** [CMakeFiles/parallel.dir/build.make:63: CMakeFiles/parallel.dir/src/parallel.cpp.o] Error 1
+[6.607s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/parallel.dir/all] Error 2
+[6.607s] make[1]: *** Se espera a que terminen otras tareas....
+[154.460s] make[2]: *** Se borra el archivo 'CMakeFiles/rings.dir/src/rings.cpp.o'
+[154.461s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Interrupción
+[154.461s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/rings.dir/all] Interrupción
+[154.461s] make: *** [Makefile:141: all] Interrupción
+[154.511s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

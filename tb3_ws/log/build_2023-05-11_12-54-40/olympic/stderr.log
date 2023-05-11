@@ -1,0 +1,18 @@
+CMake Error at CMakeLists.txt:26 (find_package):
+  By not providing "Findolympic_interfaces.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "olympic_interfaces", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "olympic_interfaces" with any of the following names:
+
+    olympic_interfacesConfig.cmake
+    olympic_interfaces-config.cmake
+
+  Add the installation prefix of "olympic_interfaces" to CMAKE_PREFIX_PATH or
+  set "olympic_interfaces_DIR" to a directory containing one of the above
+  files.  If "olympic_interfaces" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+make: *** [Makefile:354: cmake_check_build_system] Error 1

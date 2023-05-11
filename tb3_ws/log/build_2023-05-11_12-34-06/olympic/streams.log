@@ -1,0 +1,117 @@
+[0.019s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.046s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.069s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.233s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.261s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.354s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.389s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.390s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.493s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.517s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.591s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.613s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.654s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.723s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.723s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.724s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>
+[0.724s] -- Configured cppcheck exclude dirs and/or files: 
+[0.724s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.724s] -- Configured cpplint exclude dirs and/or files: 
+[0.724s] -- Added test 'lint_cmake' to check CMake code style
+[0.725s] -- Added test 'uncrustify' to check C / C++ code style
+[0.725s] -- Configured uncrustify additional arguments: 
+[0.725s] -- Added test 'xmllint' to check XML markup files
+[0.728s] -- Configuring done
+[0.747s] -- Generating done
+[0.750s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[0.775s] [35m[1mScanning dependencies of target rings_action_client[0m
+[0.776s] [35m[1mScanning dependencies of target rings_action_server[0m
+[0.795s] [ 33%] Built target rings
+[0.815s] [ 66%] [32mBuilding CXX object CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o[0m
+[0.815s] [ 66%] [32mBuilding CXX object CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o[0m
+[1.807s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.807s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kg_node[m[K’ was not declared in this scope
+[1.807s]     9 |   [01;31m[Kg_node[m[K = rclcpp::Node::make_shared("action_client");
+[1.807s]       |   [01;31m[K^~~~~~[m[K
+[1.807s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.807s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:12:34:[m[K [01;31m[Kerror: [m[K‘[01m[KRings[m[K’ was not declared in this scope
+[1.807s]    12 |     rclcpp_action::create_server<[01;31m[KRings[m[K>(node,
+[1.808s]       |                                  [01;31m[K^~~~~[m[K
+[1.808s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:10:53:[m[K [01;31m[Kerror: [m[K‘[01m[KRings[m[K’ was not declared in this scope
+[1.809s]    10 |   auto action_client = rclcpp_action::create_client<[01;31m[KRings[m[K>(
+[1.809s]       |                                                     [01;31m[K^~~~~[m[K
+[1.809s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:13:46:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[1.809s]    13 |   if (!action_client->wait_for_action_server([01;31m[K20s[m[K)) {
+[1.809s]       |                                              [01;31m[K^~~[m[K
+[1.809s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.809s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.809s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:3[m[K:
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:14:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.810s]    14 |     [01;31m[KRCLCPP_ERROR[m[K(g_node->get_logger(),
+[1.810s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:14:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.810s]    14 |     [01;31m[KRCLCPP_ERROR[m[K(g_node->get_logger(),
+[1.810s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:14:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.810s]    14 |     [01;31m[KRCLCPP_ERROR[m[K(g_node->get_logger(),
+[1.810s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:20:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.810s]    20 |   [01;31m[KRCLCPP_INFO[m[K(g_node->get_logger(),
+[1.810s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:14:7:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_goal[m[K’ was not declared in this scope
+[1.810s]    14 |       [01;31m[Khandle_goal[m[K,
+[1.810s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:20:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.810s]    20 |   [01;31m[KRCLCPP_INFO[m[K(g_node->get_logger(),
+[1.810s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[1.810s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:20:3:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.810s]    20 |   [01;31m[KRCLCPP_INFO[m[K(g_node->get_logger(),
+[1.810s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[1.811s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:15:7:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_cancel[m[K’ was not declared in this scope
+[1.811s]    15 |       [01;31m[Khandle_cancel[m[K,
+[1.811s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[1.811s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:24:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeedback_callback[m[K’ was not declared in this scope
+[1.811s]    24 |   send_goal_options.feedback_callback = [01;31m[Kfeedback_callback[m[K;
+[1.811s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.812s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:16:7:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_accepted[m[K’ was not declared in this scope
+[1.812s]    16 |       [01;31m[Khandle_accepted[m[K);
+[1.812s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.813s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:26:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_msg[m[K’ was not declared in this scope
+[1.813s]    26 |     action_client->async_send_goal([01;31m[Kgoal_msg[m[K, send_goal_options);
+[1.813s]       |                                    [01;31m[K^~~~~~~~[m[K
+[1.813s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.813s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.813s]                  from [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:3[m[K:
+[1.813s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:33:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.814s]    33 |     [01;31m[KRCLCPP_ERROR[m[K(g_node->get_logger(),
+[1.814s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.814s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:33:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.814s]    33 |     [01;31m[KRCLCPP_ERROR[m[K(g_node->get_logger(),
+[1.814s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.814s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:33:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.814s]    33 |     [01;31m[KRCLCPP_ERROR[m[K(g_node->get_logger(),
+[1.814s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.103s] make[2]: *** [CMakeFiles/rings_action_client.dir/build.make:63: CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o] Error 1
+[2.104s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings_action_client.dir/all] Error 2
+[2.104s] make[1]: *** Se espera a que terminen otras tareas....
+[2.107s] make[2]: *** [CMakeFiles/rings_action_server.dir/build.make:63: CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o] Error 1
+[2.107s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/rings_action_server.dir/all] Error 2
+[2.107s] make: *** [Makefile:141: all] Error 2
+[2.110s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
