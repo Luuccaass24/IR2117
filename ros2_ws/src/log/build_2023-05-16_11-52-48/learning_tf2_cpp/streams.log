@@ -1,0 +1,7 @@
+[0.032s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/learning_tf2_cpp': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/learning_tf2_cpp -- -j6 -l6
+[0.086s] [ 25%] [32mBuilding CXX object CMakeFiles/turtle_tf2_broadcaster.dir/src/turtle_tf2_broadcaster.cpp.o[0m
+[0.086s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_tf2_listener.dir/src/turtle_tf2_listener.cpp.o[0m
+[2.891s] [ 75%] [32m[1mLinking CXX executable turtle_tf2_listener[0m
+[3.150s] [ 75%] Built target turtle_tf2_listener
+[4.704s] [100%] [32m[1mLinking CXX executable turtle_tf2_broadcaster[0m
+[5.226s] [100%] Built target turtle_tf2_broadcaster

@@ -1,0 +1,4 @@
+[0.039s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_sum -- -j6 -l6
+[0.083s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[4.288s] [100%] [32m[1mLinking CXX executable sum[0m
+[4.710s] [100%] Built target sum

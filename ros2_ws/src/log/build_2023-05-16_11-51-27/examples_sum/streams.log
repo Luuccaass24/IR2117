@@ -1,0 +1,19 @@
+[0.108s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_sum -- -j6 -l6
+[0.230s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.256s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.443s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.467s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.469s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.559s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.604s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.606s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.868s] -- Configuring done
+[1.112s] -- Generating done
+[1.213s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_sum
+[1.424s] [35m[1mScanning dependencies of target sum[0m
+[1.751s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[5.031s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[5.031s] make[2]: *** Se espera a que terminen otras tareas....
+[5.032s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[5.032s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sum.dir/all] Error 2
+[5.032s] make: *** [Makefile:141: all] Interrupción

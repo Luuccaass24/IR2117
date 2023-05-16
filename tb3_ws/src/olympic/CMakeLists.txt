@@ -23,38 +23,35 @@ find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
+find_package(olympic_interfaces REQUIRED)
 
 add_executable(rings src/rings.cpp)
+target_include_directories(rings PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+ament_target_dependencies(
+  rings
+  rclcpp
+  std_msgs
+  geometry_msgs
+  turtlesim
+)
 
 add_executable(rings_action_server src/rings_action_server.cpp)
 ament_target_dependencies(rings_action_server
   rclcpp
   rclcpp_action
+  geometry_msgs
+  turtlesim
   olympic_interfaces)
 
 add_executable(rings_action_client src/rings_action_client.cpp)
 ament_target_dependencies(rings_action_client
   rclcpp
   rclcpp_action
-  olympic_interfaces)  
-
-target_include_directories(rings PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
-ament_target_dependencies(
-  rings
-  "rclcpp"
-  "std_msgs"
-  "geometry_msgs"
-  "turtlesim"
-  "olympic_interfaces"
-)
+  olympic_interfaces)
 
 
-install(TARGETS rings
-  rings_action_server
-  rings_action_client
-  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -67,4 +64,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+install(TARGETS rings
+  rings_action_server
+  rings_action_client
+  DESTINATION lib/${PROJECT_NAME})
+  
 ament_package()

@@ -1,0 +1,5 @@
+make[2]: *** [CMakeFiles/turtle_tf2_broadcaster.dir/build.make:63: CMakeFiles/turtle_tf2_broadcaster.dir/src/turtle_tf2_broadcaster.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/turtle_tf2_broadcaster.dir/all] Interrupción
+make[2]: *** [CMakeFiles/turtle_tf2_listener.dir/build.make:63: CMakeFiles/turtle_tf2_listener.dir/src/turtle_tf2_listener.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/turtle_tf2_listener.dir/all] Interrupción
+make: *** [Makefile:141: all] Interrupción

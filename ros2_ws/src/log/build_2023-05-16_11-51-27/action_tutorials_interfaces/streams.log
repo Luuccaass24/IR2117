@@ -1,0 +1,54 @@
+[0.070s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/action_tutorials_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/action_tutorials_interfaces -- -j6 -l6
+[0.257s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.281s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.281s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.478s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.550s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.552s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.555s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.657s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.724s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.089s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[2.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.636s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.659s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.659s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.681s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.681s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.681s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.923s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.924s] -- Added test 'lint_cmake' to check CMake code style
+[2.925s] -- Added test 'xmllint' to check XML markup files
+[3.005s] -- Configuring done
+[3.537s] -- Generating done
+[3.549s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/action_tutorials_interfaces
+[3.614s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.621s] [35m[1mScanning dependencies of target action_tutorials_interfaces__cpp[0m
+[3.665s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.934s] [  6%] Built target action_tutorials_interfaces__cpp
+[3.982s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.000s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.000s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.080s] [35m[1mScanning dependencies of target action_tutorials_interfaces__rosidl_generator_c[0m
+[4.202s] [ 19%] [32mBuilding C object CMakeFiles/action_tutorials_interfaces__rosidl_generator_c.dir/rosidl_generator_c/action_tutorials_interfaces/action/detail/fibonacci__functions.c.o[0m
+[4.280s] [35m[1mScanning dependencies of target action_tutorials_interfaces__rosidl_typesupport_cpp[0m
+[4.348s] [35m[1mScanning dependencies of target action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[4.409s] [ 22%] [32mBuilding CXX object CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_tutorials_interfaces/action/fibonacci__type_support.cpp.o[0m
+[4.473s] [ 25%] [32mBuilding CXX object CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_tutorials_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o[0m
+[4.501s] [35m[1mScanning dependencies of target action_tutorials_interfaces__rosidl_typesupport_introspection_cpp[0m
+[4.521s] [ 29%] [32m[1mLinking C shared library libaction_tutorials_interfaces__rosidl_generator_c.so[0m
+[4.598s] [ 32%] [32mBuilding CXX object CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/action_tutorials_interfaces/action/detail/fibonacci__type_support.cpp.o[0m
+[5.054s] make[2]: *** Se borra el archivo 'CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_tutorials_interfaces/action/fibonacci__type_support.cpp.o'
+[5.054s] make[2]: *** Se borra el archivo 'CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_tutorials_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o'
+[5.055s] make[2]: *** [CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/build.make:80: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_tutorials_interfaces/action/fibonacci__type_support.cpp.o] Interrupción
+[5.055s] make[1]: *** [CMakeFiles/Makefile2:268: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/all] Interrupción
+[5.055s] make[2]: *** [CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:85: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_tutorials_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o] Interrupción
+[5.055s] make[1]: *** [CMakeFiles/Makefile2:295: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupción
+[5.056s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[5.056s] make[2]: *** Se borra el archivo 'libaction_tutorials_interfaces__rosidl_generator_c.so'
+[5.058s] make[2]: *** [CMakeFiles/action_tutorials_interfaces__rosidl_generator_c.dir/build.make:142: libaction_tutorials_interfaces__rosidl_generator_c.so] Interrupción
+[5.058s] make[1]: *** [CMakeFiles/Makefile2:210: CMakeFiles/action_tutorials_interfaces__rosidl_generator_c.dir/all] Interrupción
+[5.058s] make[2]: *** Se espera a que terminen otras tareas....
+[5.058s] make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+[5.059s] make[1]: *** [CMakeFiles/Makefile2:496: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[5.059s] make: *** [Makefile:141: all] Interrupción

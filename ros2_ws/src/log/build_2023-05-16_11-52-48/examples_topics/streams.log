@@ -1,0 +1,7 @@
+[0.035s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_topics': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/examples_topics -- -j6 -l6
+[0.087s] [ 25%] [32mBuilding CXX object CMakeFiles/subscriber.dir/subscriber.cpp.o[0m
+[0.101s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher.dir/publisher.cpp.o[0m
+[2.703s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[2.968s] [ 75%] Built target publisher
+[4.089s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[4.484s] [100%] Built target subscriber

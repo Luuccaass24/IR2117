@@ -1,0 +1,40 @@
+[0.018s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j6 -l6
+[0.038s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.055s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.211s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.236s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.239s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.330s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.365s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.366s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.467s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.491s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.552s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.603s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.657s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.662s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.662s] -- Configured cppcheck include dirs: 
+[0.662s] -- Configured cppcheck exclude dirs and/or files: 
+[0.667s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.667s] -- Configured cpplint exclude dirs and/or files: 
+[0.667s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.669s] -- Added test 'lint_cmake' to check CMake code style
+[0.669s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.673s] -- Added test 'uncrustify' to check C / C++ code style
+[0.673s] -- Configured uncrustify additional arguments: 
+[0.674s] -- Added test 'xmllint' to check XML markup files
+[0.676s] -- Configuring done
+[0.695s] -- Generating done
+[0.697s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/build/robot_trajectory
+[0.719s] [35m[1mScanning dependencies of target square[0m
+[0.720s] [35m[1mScanning dependencies of target square_odom[0m
+[0.724s] [35m[1mScanning dependencies of target wandering[0m
+[0.739s] [ 16%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[0.742s] [ 33%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[0.749s] [ 50%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[3.207s] [ 66%] [32m[1mLinking CXX executable square[0m
+[3.565s] [ 66%] Built target square
+[4.898s] [ 83%] [32m[1mLinking CXX executable square_odom[0m
+[5.472s] [ 83%] Built target square_odom
+[5.805s] [100%] [32m[1mLinking CXX executable wandering[0m
+[6.302s] [100%] Built target wandering

@@ -1,4 +1,5 @@
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/lib/obstacles/detector
+/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/lib/obstacles/avoidance
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/launch/detector_test.launch.py
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/launch/triple_detector.launch.py
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles

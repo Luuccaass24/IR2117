@@ -1,0 +1,38 @@
+[0.042s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/install/cpp_srvcli
+[0.053s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.068s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.330s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.389s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.605s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.677s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.682s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.894s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[1.047s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.096s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.208s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.208s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.209s] -- Configured cppcheck include dirs: 
+[1.209s] -- Configured cppcheck exclude dirs and/or files: 
+[1.209s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.209s] -- Configured cpplint exclude dirs and/or files: 
+[1.209s] -- Added test 'lint_cmake' to check CMake code style
+[1.210s] -- Added test 'uncrustify' to check C / C++ code style
+[1.210s] -- Configured uncrustify additional arguments: 
+[1.210s] -- Added test 'xmllint' to check XML markup files
+[1.216s] -- Configuring done
+[1.217s] CMake Error at CMakeLists.txt:26 (add_executable):
+[1.217s]   Cannot find source file:
+[1.217s] 
+[1.217s]     src/olympic_rings_client.cpp
+[1.217s] 
+[1.217s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[1.217s]   .hpp .hxx .in .txx
+[1.217s] 
+[1.217s] 
+[1.218s] CMake Error at CMakeLists.txt:26 (add_executable):
+[1.218s]   No SOURCES given to target: rings
+[1.218s] 
+[1.218s] 
+[1.218s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[1.224s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/build/cpp_srvcli' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/usuario/Documentos/GitHub/IR2117/ros2_ws/src/install/cpp_srvcli

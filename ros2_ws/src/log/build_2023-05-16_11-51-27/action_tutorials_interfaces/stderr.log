@@ -1,0 +1,14 @@
+make[2]: *** Se borra el archivo 'CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_tutorials_interfaces/action/fibonacci__type_support.cpp.o'
+make[2]: *** Se borra el archivo 'CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_tutorials_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o'
+make[2]: *** [CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/build.make:80: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_tutorials_interfaces/action/fibonacci__type_support.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:268: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_cpp.dir/all] Interrupción
+make[2]: *** [CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:85: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_tutorials_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:295: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupción
+make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+make[2]: *** Se borra el archivo 'libaction_tutorials_interfaces__rosidl_generator_c.so'
+make[2]: *** [CMakeFiles/action_tutorials_interfaces__rosidl_generator_c.dir/build.make:142: libaction_tutorials_interfaces__rosidl_generator_c.so] Interrupción
+make[1]: *** [CMakeFiles/Makefile2:210: CMakeFiles/action_tutorials_interfaces__rosidl_generator_c.dir/all] Interrupción
+make[2]: *** Se espera a que terminen otras tareas....
+make[2]: *** wait: No hay ningún proceso hijo.  Alto.
+make[1]: *** [CMakeFiles/Makefile2:496: CMakeFiles/action_tutorials_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+make: *** [Makefile:141: all] Interrupción
