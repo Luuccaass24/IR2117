@@ -413,7 +413,7 @@ olympic_BINARY_DIR:STATIC=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/ol
 olympic_SOURCE_DIR:STATIC=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic
 
 //The directory containing a CMake configuration file for olympic_interfaces.
-olympic_interfaces_DIR:PATH=olympic_interfaces_DIR-NOTFOUND
+olympic_interfaces_DIR:PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/share/olympic_interfaces/cmake
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so

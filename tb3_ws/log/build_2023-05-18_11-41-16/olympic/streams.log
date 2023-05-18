@@ -1,0 +1,59 @@
+[0.035s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.105s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.130s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.334s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.360s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.362s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.450s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.483s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.484s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.582s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.605s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.712s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.736s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.792s] -- Found olympic_interfaces: 0.0.0 (/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/share/olympic_interfaces/cmake)
+[0.795s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.893s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.893s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.894s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/include>
+[0.894s] -- Configured cppcheck exclude dirs and/or files: 
+[0.894s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.894s] -- Configured cpplint exclude dirs and/or files: 
+[0.894s] -- Added test 'lint_cmake' to check CMake code style
+[0.895s] -- Added test 'uncrustify' to check C / C++ code style
+[0.895s] -- Configured uncrustify additional arguments: 
+[0.895s] -- Added test 'xmllint' to check XML markup files
+[0.906s] -- Configuring done
+[1.020s] -- Generating done
+[1.034s] -- Build files have been written to: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[1.127s] [35m[1mScanning dependencies of target rings[0m
+[1.143s] [35m[1mScanning dependencies of target rings_action_server[0m
+[1.144s] [35m[1mScanning dependencies of target rings_action_client[0m
+[1.273s] [ 16%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[1.278s] [ 50%] [32mBuilding CXX object CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o[0m
+[1.279s] [ 50%] [32mBuilding CXX object CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o[0m
+[1.367s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kolympic_interfaces/action/rings.hpp: No existe el archivo o el directorio
+[1.367s]     6 | #include [01;31m[K"olympic_interfaces/action/rings.hpp"[m[K
+[1.367s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.367s] compilation terminated.
+[1.372s] make[2]: *** [CMakeFiles/rings_action_client.dir/build.make:63: CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o] Error 1
+[1.373s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings_action_client.dir/all] Error 2
+[1.373s] make[1]: *** Se espera a que terminen otras tareas....
+[2.300s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.300s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:12:34:[m[K [01;31m[Kerror: [m[K‘[01m[KRings[m[K’ was not declared in this scope
+[2.300s]    12 |     rclcpp_action::create_server<[01;31m[KRings[m[K>(node,
+[2.300s]       |                                  [01;31m[K^~~~~[m[K
+[2.302s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:14:7:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_goal[m[K’ was not declared in this scope
+[2.302s]    14 |       [01;31m[Khandle_goal[m[K,
+[2.302s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[2.304s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:15:7:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_cancel[m[K’ was not declared in this scope
+[2.304s]    15 |       [01;31m[Khandle_cancel[m[K,
+[2.304s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[2.306s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:16:7:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_accepted[m[K’ was not declared in this scope
+[2.306s]    16 |       [01;31m[Khandle_accepted[m[K);
+[2.306s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.610s] make[2]: *** [CMakeFiles/rings_action_server.dir/build.make:63: CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o] Error 1
+[2.611s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/rings_action_server.dir/all] Error 2
+[8.266s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Interrupción
+[8.266s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/rings.dir/all] Interrupción
+[8.266s] make: *** [Makefile:141: all] Interrupción

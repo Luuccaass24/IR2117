@@ -15,6 +15,12 @@ rclcpp/rclcpp.hpp
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rclcpp/rclcpp.hpp
 rclcpp_action/rclcpp_action.hpp
 /home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rclcpp_action/rclcpp_action.hpp
+iomanip
+-
+olympic_interfaces/action/rings.hpp
+/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/olympic_interfaces/action/rings.hpp
+sstream
+-
 
 /opt/ros/foxy/include/action_msgs/msg/detail/goal_info__builder.hpp
 action_msgs/msg/detail/goal_info__struct.hpp
