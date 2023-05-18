@@ -80,6 +80,10 @@ rings_action_client_EXTERNAL_OBJECTS =
 rings_action_client: CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o
 rings_action_client: CMakeFiles/rings_action_client.dir/build.make
 rings_action_client: /opt/ros/foxy/lib/librclcpp_action.so
+rings_action_client: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_introspection_c.so
+rings_action_client: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_c.so
+rings_action_client: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_introspection_cpp.so
+rings_action_client: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_cpp.so
 rings_action_client: /opt/ros/foxy/lib/librclcpp.so
 rings_action_client: /opt/ros/foxy/lib/liblibstatistics_collector.so
 rings_action_client: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
@@ -115,6 +119,8 @@ rings_action_client: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp
 rings_action_client: /opt/ros/foxy/lib/librmw_implementation.so
 rings_action_client: /opt/ros/foxy/lib/librcl_logging_spdlog.so
 rings_action_client: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.5.0
+rings_action_client: /opt/ros/foxy/lib/librmw.so
+rings_action_client: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_generator_c.so
 rings_action_client: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 rings_action_client: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
 rings_action_client: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
@@ -135,7 +141,6 @@ rings_action_client: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesup
 rings_action_client: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
 rings_action_client: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 rings_action_client: /opt/ros/foxy/lib/librcpputils.so
-rings_action_client: /opt/ros/foxy/lib/librmw.so
 rings_action_client: /opt/ros/foxy/lib/librosidl_runtime_c.so
 rings_action_client: /opt/ros/foxy/lib/librcutils.so
 rings_action_client: CMakeFiles/rings_action_client.dir/link.txt

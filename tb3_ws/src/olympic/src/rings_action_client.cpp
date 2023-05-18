@@ -6,7 +6,6 @@
 #include "olympic_interfaces/action/rings.hpp"
 #include <sstream>
 
-// We need the action and goal handle classes, the chrono literals, and a pointer to the ROS node
 using Rings = 
   olympic_interfaces::action::Rings;
 
@@ -43,11 +42,11 @@ int main(int argc, char ** argv){
       "Action server not available after waiting");
     return 1;
   }
-  // Populate a goal
+  
   auto goal_msg = Rings::Goal();
   goal_msg.radius = radius;
 
-  // Ask server to achieve the goal
+
   RCLCPP_INFO(g_node->get_logger(), 
     "Sending goal");
   auto send_goal_options = 
@@ -76,7 +75,6 @@ int main(int argc, char ** argv){
     return 1;
   }
   
-  // Wait for the server to be done with the goal
   auto result_future = 
     action_client->async_get_result(goal_handle);
 

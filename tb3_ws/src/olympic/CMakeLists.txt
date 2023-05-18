@@ -51,8 +51,6 @@ ament_target_dependencies(rings_action_client
   rclcpp_action
   olympic_interfaces)
 
-
-
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -64,9 +62,11 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(TARGETS rings
+install(TARGETS 
+  rings
   rings_action_server
   rings_action_client
   DESTINATION lib/${PROJECT_NAME})
-  
+
+
 ament_package()

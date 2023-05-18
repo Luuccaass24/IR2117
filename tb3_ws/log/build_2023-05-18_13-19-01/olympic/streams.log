@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.070s] [100%] Built target rings_action_client
+[0.071s] [100%] Built target rings_action_server
+[0.071s] [100%] Built target rings
+[0.078s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '0': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.108s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic
+[0.115s] -- Install configuration: ""
+[0.118s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+[0.128s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings_action_server
+[0.134s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings_action_client
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.dsv
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.sh
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.dsv
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.bash
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.sh
+[0.137s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.zsh
+[0.138s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.dsv
+[0.138s] -- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.dsv
+[0.138s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/packages/olympic
+[0.138s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig.cmake
+[0.138s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig-version.cmake
+[0.138s] -- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.xml
+[0.145s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '0': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic

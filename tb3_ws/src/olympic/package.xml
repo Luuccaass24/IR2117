@@ -3,7 +3,7 @@
 <package format="3">
   <name>olympic</name>
   <version>0.0.0</version>
-  <description>Olympic rings</description>
+  <description>rings</description>
   <maintainer email="al415409@uji.es">usuario</maintainer>
   <license>TODO: License declaration</license>
 
@@ -24,3 +24,4 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+

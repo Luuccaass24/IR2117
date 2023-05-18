@@ -1,0 +1,13 @@
+[0.013s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.052s] [35m[1mScanning dependencies of target rings_action_server[0m
+[0.067s] [ 66%] Built target rings
+[0.067s] [ 66%] Built target rings_action_client
+[0.074s] [ 83%] [32mBuilding CXX object CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o[0m
+[1.119s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kvoid execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)[m[K’:
+[1.120s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:94:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[1.120s]    94 |       ring_number=[01;31m[Ki[m[K+1;
+[1.120s]       |                   [01;31m[K^[m[K
+[2.233s] make[2]: *** [CMakeFiles/rings_action_server.dir/build.make:63: CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o] Error 1
+[2.233s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/rings_action_server.dir/all] Error 2
+[2.234s] make: *** [Makefile:141: all] Error 2
+[2.236s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

@@ -1,0 +1,21 @@
+[0.012s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.051s] [35m[1mScanning dependencies of target rings_action_server[0m
+[0.065s] [ 50%] Built target rings_action_client
+[0.065s] [ 66%] Built target rings
+[0.072s] [ 83%] [32mBuilding CXX object CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o[0m
+[1.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kvoid execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)[m[K’:
+[1.139s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:94:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[1.139s]    94 |       ring_number=[01;31m[Ki[m[K+1;
+[1.140s]       |                   [01;31m[K^[m[K
+[1.147s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:125:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kring_anlge[m[K’ was not declared in this scope; did you mean ‘[01m[Kring_angle[m[K’?
+[1.147s]   125 |     [01;31m[Kring_anlge[m[K=180;
+[1.147s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.147s]       |     [32m[Kring_angle[m[K
+[1.149s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:129:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kring_anlge[m[K’ was not declared in this scope; did you mean ‘[01m[Kring_angle[m[K’?
+[1.149s]   129 |     [01;31m[Kring_anlge[m[K=360;
+[1.149s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.149s]       |     [32m[Kring_angle[m[K
+[2.268s] make[2]: *** [CMakeFiles/rings_action_server.dir/build.make:63: CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o] Error 1
+[2.268s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/rings_action_server.dir/all] Error 2
+[2.269s] make: *** [Makefile:141: all] Error 2
+[2.271s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

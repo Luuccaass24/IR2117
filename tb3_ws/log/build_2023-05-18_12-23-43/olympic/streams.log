@@ -1,0 +1,20 @@
+[0.033s] Invoking command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6
+[0.062s] [35m[1mScanning dependencies of target rings_action_client[0m
+[0.074s] [ 16%] [32mBuilding CXX object CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o[0m
+[0.077s] [ 50%] Built target rings
+[0.084s] [ 66%] [32mBuilding CXX object CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o[0m
+[0.095s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kolympic_interfaces/action/rings.hpp: No existe el archivo o el directorio
+[0.096s]     3 | #include [01;31m[K"olympic_interfaces/action/rings.hpp"[m[K
+[0.096s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.096s] compilation terminated.
+[0.096s] make[2]: *** [CMakeFiles/rings_action_server.dir/build.make:63: CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o] Error 1
+[0.096s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/rings_action_server.dir/all] Error 2
+[0.096s] make[1]: *** Se espera a que terminen otras tareas....
+[0.153s] [01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kolympic_interfaces/action/rings.hpp: No existe el archivo o el directorio
+[0.153s]     6 | #include [01;31m[K"olympic_interfaces/action/rings.hpp"[m[K
+[0.153s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.153s] compilation terminated.
+[0.155s] make[2]: *** [CMakeFiles/rings_action_client.dir/build.make:63: CMakeFiles/rings_action_client.dir/src/rings_action_client.cpp.o] Error 1
+[0.155s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/rings_action_client.dir/all] Error 2
+[0.155s] make: *** [Makefile:141: all] Error 2
+[0.157s] Invoked command in '/home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic' returned '2': AMENT_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/usuario/Documentos/GitHub/IR2117/tb3_ws/build/olympic -- -j6 -l6

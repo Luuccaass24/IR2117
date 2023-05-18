@@ -88,6 +88,10 @@ rings_action_server: /opt/ros/foxy/lib/libturtlesim__rosidl_typesupport_introspe
 rings_action_server: /opt/ros/foxy/lib/libturtlesim__rosidl_typesupport_c.so
 rings_action_server: /opt/ros/foxy/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so
 rings_action_server: /opt/ros/foxy/lib/libturtlesim__rosidl_typesupport_cpp.so
+rings_action_server: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_introspection_c.so
+rings_action_server: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_c.so
+rings_action_server: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_introspection_cpp.so
+rings_action_server: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_cpp.so
 rings_action_server: /opt/ros/foxy/lib/librclcpp.so
 rings_action_server: /opt/ros/foxy/lib/liblibstatistics_collector.so
 rings_action_server: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
@@ -126,6 +130,7 @@ rings_action_server: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
 rings_action_server: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 rings_action_server: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 rings_action_server: /opt/ros/foxy/lib/libturtlesim__rosidl_generator_c.so
+rings_action_server: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_generator_c.so
 rings_action_server: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
 rings_action_server: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
 rings_action_server: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so

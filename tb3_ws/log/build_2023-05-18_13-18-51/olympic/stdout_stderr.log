@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target rings_action_server[0m
+[ 66%] Built target rings_action_client
+[ 66%] Built target rings
+[ 83%] [32mBuilding CXX object CMakeFiles/rings_action_server.dir/src/rings_action_server.cpp.o[0m
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kvoid execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)[m[K’:
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:55:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kring_number[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   55 |   auto & [01;35m[Kring_number[m[K = feedback->drawing_ring;
+      |          [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/usuario/Documentos/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:56:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kring_angle[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   56 |   auto & [01;35m[Kring_angle[m[K = feedback->ring_angle;
+      |          [01;35m[K^~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable rings_action_server[0m
+[100%] Built target rings_action_server
+-- Install configuration: ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings" to ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings_action_server
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings_action_server" to ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings_action_client
+-- Set runtime path of "/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings_action_client" to ""
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.sh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.dsv
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.bash
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.sh
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.zsh
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.dsv
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.dsv
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/packages/olympic
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig.cmake
+-- Up-to-date: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig-version.cmake
+-- Installing: /home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.xml

@@ -272,7 +272,7 @@ SITE:STRING=labrob08.act.uji.es
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/usuario/Documentos/GitHub/IR2117/tb3_ws/install/olympic_interfaces/lib/libolympic_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/foxy/share/action_msgs/cmake
