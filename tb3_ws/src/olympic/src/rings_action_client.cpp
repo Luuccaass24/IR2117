@@ -20,7 +20,7 @@ void feedback_callback(GoalHandleRings::SharedPtr,
   const std::shared_ptr<const Rings::Feedback> feedback)
 {
   std::stringstream ss;
-  ss << std::setprecision(3) << "Circle n." << feedback->drawing_ring << " at "
+  ss << std::setprecision(3) << "Circle nº" << feedback->drawing_ring << " with position "
      << feedback->ring_angle << " degrees";
   RCLCPP_INFO(
     g_node->get_logger(),
