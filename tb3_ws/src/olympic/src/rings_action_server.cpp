@@ -24,8 +24,7 @@ rclcpp_action::GoalResponse handle_goal(
   const rclcpp_action::GoalUUID & uuid, 
   std::shared_ptr<const Rings::Goal> goal)
 {
-  RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "Circle with radius: ", goal->radius);
+  RCLCPP_INFO(rclcpp::get_logger("server"), "Circle with radius: %f", goal->radius);
   (void)uuid;
   return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
 }
