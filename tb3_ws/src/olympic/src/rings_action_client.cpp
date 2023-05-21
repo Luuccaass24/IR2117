@@ -19,12 +19,12 @@ rclcpp::Node::SharedPtr g_node = nullptr;
 void feedback_callback(GoalHandleRings::SharedPtr,
   const std::shared_ptr<const Rings::Feedback> feedback)
 {
-  std::stringstream ss;
-  ss << std::setprecision(3) << "Circle nº" << feedback->drawing_ring << " with position "
+  std::stringstream exit;
+  exit << std::setprecision(3) << "Circle nº" << feedback->drawing_ring << " with position "
      << feedback->ring_angle << " degrees";
   RCLCPP_INFO(
     g_node->get_logger(),
-    ss.str().c_str());  // stringstream to string and then to char*
+    exit.str().c_str());
 }
 
 int main(int argc, char ** argv){
@@ -55,15 +55,13 @@ int main(int argc, char ** argv){
   auto goal_handle_future = 
     action_client->async_send_goal(goal_msg, send_goal_options);
 
-  // Wait until it's accepted or rejected
   auto return_code = rclcpp::spin_until_future_complete(g_node,
     goal_handle_future);
   
-  // Exit in case of failure or if the goal has been rejected by the server
   if (return_code != rclcpp::FutureReturnCode::SUCCESS)
   {
     RCLCPP_ERROR(g_node->get_logger(), 
-      "send goal call failed :(");
+      "send goal call failed ");
     return 1;
   }
 
