@@ -25,15 +25,14 @@ rclcpp_action::GoalResponse handle_goal(
   std::shared_ptr<const Rings::Goal> goal)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "ircle with radius: ", goal->radius);
+    "Circle with radius: ", goal->radius);
   (void)uuid;
   return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
 }
 rclcpp_action::CancelResponse handle_cancel(
   const std::shared_ptr<GoalHandleRings> goal_handle)
 {
-  RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "Got request to cancel goal");
+  RCLCPP_INFO(rclcpp::get_logger("server"), "Got request to cancel goal");
   (void)goal_handle;
   return rclcpp_action::CancelResponse::ACCEPT;
 }
@@ -47,8 +46,7 @@ void handle_accepted(
 void execute(
   const std::shared_ptr<GoalHandleRings> goal_handle)
 {
-  RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "Executing goal");
+  RCLCPP_INFO(rclcpp::get_logger("server"), "Executing goal");
   const auto goal = goal_handle->get_goal();
   auto feedback = std::make_shared<Rings::Feedback>();
   auto result = std::make_shared<Rings::Result>();
@@ -80,8 +78,11 @@ void execute(
         
   rclcpp::Client<TeleportAbsolute>::SharedPtr teleport =
 		node->create_client<TeleportAbsolute>("/turtle1/teleport_absolute");
+  auto teleport_request = std::make_shared<TeleportAbsolute::Request>();
+  
   rclcpp::Client<SetPen>::SharedPtr setpen =
 		node->create_client<SetPen>("/turtle1/set_pen");
+  auto setpen_request = std::make_shared<SetPen::Request>();
         
   for (int l =0;l<5;l++){
 	      if (goal_handle->is_canceling()) {
@@ -94,7 +95,7 @@ void execute(
 	    	ring_number=l+1;
 	    	ring_angle=0;
 	    	
-        	auto setpen_request = std::make_shared<SetPen::Request>();
+        	
         	setpen_request->r = colors[l][0];
         	setpen_request->g = colors[l][1];
         	setpen_request->b = colors[l][2];
@@ -102,7 +103,7 @@ void execute(
         	setpen_request->off = 1;
         	auto future_setpen = setpen->async_send_request(setpen_request);
         
-        	auto teleport_request = std::make_shared<TeleportAbsolute::Request>();
+        	
         	teleport_request->x = pos[l][0];
         	teleport_request->y = pos[l][1];
         	teleport_request->theta = 0.0;
@@ -114,7 +115,9 @@ void execute(
         	setpen_request->off = 0;
         	
         	auto future_teleport = teleport->async_send_request(teleport_request);
-        	future_setpen = setpen->async_send_request(setpen_request);
+            
+            goal_handle->publish_feedback(feedback);
+            RCLCPP_INFO(rclcpp::get_logger("server"), "Publish Feedback");
 
        
 	    	int i=0,n=(2*M_PI)/(0.01 * 0.5);
@@ -122,18 +125,22 @@ void execute(
 			if (n/4 == i){
 				ring_angle=90;
 				goal_handle->publish_feedback(feedback);
+                RCLCPP_INFO(rclcpp::get_logger("server"), "Publish Feedback");
 			}else if (n/2 == i){
 				ring_angle=180;
 				goal_handle->publish_feedback(feedback);
+                RCLCPP_INFO(rclcpp::get_logger("server"), "Publish Feedback");
 			}else if (n/3 == i){
 				ring_angle=270;
 				goal_handle->publish_feedback(feedback);
+                RCLCPP_INFO(rclcpp::get_logger("server"), "Publish Feedback");
 			}else{
 				ring_angle=360;
 				goal_handle->publish_feedback(feedback);
+                RCLCPP_INFO(rclcpp::get_logger("server"), "Publish Feedback");
 			}
 			message.linear.x = radius * 0.5;
-		    	message.angular.z = 0.5;
+            message.angular.z = 0.5;
 			move->publish(message);
 			loop_rate.sleep();
 			i++;
@@ -146,6 +153,13 @@ void execute(
         	setpen_request->off = 1;
         	future_setpen = setpen->async_send_request(setpen_request);
 	}
+	
+	if (rclcpp::ok()){
+    
+        result->rings_completed = ring_number;
+        goal_handle->succeed(result);
+        RCLCPP_INFO(rclcpp::get_logger("server"), "Rings completed");
+    }
 
 }
 int main(int argc, char ** argv)
