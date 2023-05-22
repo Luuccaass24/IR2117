@@ -94,24 +94,21 @@ void execute(
 	    	ring_number=l+1;
 	    	ring_angle=0;
 	    	
-        	
-        	setpen_request->r = colors[l][0];
-        	setpen_request->g = colors[l][1];
-        	setpen_request->b = colors[l][2];
-        	setpen_request->width = 2.0;
-        	setpen_request->off = 1;
+	    		setpen_request = std::make_shared<SetPen::Request>();
+			setpen_request->r = colors[l][0];
+			setpen_request->g = colors[l][1];
+			setpen_request->b = colors[l][2];
+			setpen_request->width = 2.0;
+			setpen_request->off = 1;
         	auto future_setpen = setpen->async_send_request(setpen_request);
         
-        	
+        	teleport_request = std::make_shared<TeleportAbsolute::Request>();
         	teleport_request->x = pos[l][0];
         	teleport_request->y = pos[l][1];
         	teleport_request->theta = 0.0;
         	
-        	setpen_request->r = colors[l][0];
-        	setpen_request->g = colors[l][1];
-        	setpen_request->b = colors[l][2];
-        	setpen_request->width = 2.0;
         	setpen_request->off = 0;
+        	future_setpen = setpen->async_send_request(setpen_request);
         	
         	auto future_teleport = teleport->async_send_request(teleport_request);
             
@@ -145,10 +142,6 @@ void execute(
 			i++;
 		}
 		
-        	setpen_request->r = colors[l][0];
-        	setpen_request->g = colors[l][1];
-        	setpen_request->b = colors[l][2];
-        	setpen_request->width = 2.0;
         	setpen_request->off = 1;
         	future_setpen = setpen->async_send_request(setpen_request);
 	}
@@ -164,7 +157,7 @@ void execute(
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  auto node = rclcpp::Node::make_shared("action_server");
+  node = rclcpp::Node::make_shared("action_server");
   auto action_server = 
     rclcpp_action::create_server<Rings>(node,
       "rings",
